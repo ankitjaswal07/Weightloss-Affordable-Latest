@@ -1,0 +1,408 @@
+# Translation template.
+# This file is distributed under the same license as the package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WeightLossAffordable 3.0.0\n"
+"Report-Msgid-Bugs-To: https://weightlossaffordable.com/\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: weightloss-affordable\n"
+
+#: template-parts/sections/helpers.php:1042
+msgid "%d out of 5 stars"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1927
+msgid "A prescription is issued only if a licensed clinician decides treatment is appropriate. Nothing on this page is a guarantee of eligibility or outcome."
+msgstr ""
+
+#: archive.php:16
+msgid "ARCHIVE"
+msgstr ""
+
+#: index.php:17
+msgid "ARTICLES"
+msgstr ""
+
+#: inc/template-tags.php:25
+msgid "About"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1801
+msgid "Active ingredient"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1645
+msgid "Active ingredient:"
+msgstr ""
+
+#: home.php:26
+#: home.php:29
+msgid "Articles"
+msgstr ""
+
+#: header.php:75
+msgid "Ask a question"
+msgstr ""
+
+#: footer.php:125
+msgid "Ask about this topic"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1836
+msgid "Available plans"
+msgstr ""
+
+#: index.php:17
+msgid "BLOG"
+msgstr ""
+
+#: 404.php:23
+msgid "Back to homepage"
+msgstr ""
+
+#: inc/setup.php:66
+msgid "Blog sidebar"
+msgstr ""
+
+#: home.php:23
+#: template-parts/sections/helpers.php:1334
+msgid "Breadcrumb"
+msgstr ""
+
+#: footer.php:21
+#: inc/customizer.php:35
+msgid "Clear information about clinician-led weight care, so you can decide your next step with confidence."
+msgstr ""
+
+#: header.php:30
+#: inc/customizer.php:33
+msgid "Clinician-led weight care · English-language support"
+msgstr ""
+
+#: footer.php:101
+msgid "Close guide"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1270
+msgid "Company"
+msgstr ""
+
+#: inc/template-tags.php:22
+msgid "Compare"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1755
+msgid "Compare treatments"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1803
+msgid "Dosage form"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1796
+msgid "Dual GLP-1 / GIP receptor agonist"
+msgstr ""
+
+#: footer.php:25
+msgid "EXPLORE"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1250
+msgid "Email"
+msgstr ""
+
+#: inc/template-tags.php:24
+msgid "FAQs"
+msgstr ""
+
+#: inc/setup.php:77
+msgid "Footer extra"
+msgstr ""
+
+#: inc/customizer.php:35
+msgid "Footer introduction"
+msgstr ""
+
+#: inc/customizer.php:36
+msgid "Footer medical disclaimer"
+msgstr ""
+
+#: inc/setup.php:45
+msgid "Footer — explore links"
+msgstr ""
+
+#: inc/setup.php:46
+msgid "Footer — legal links"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1804
+msgid "Frequency"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1621
+msgid "GLP-1 + GIP dual agonist"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1620
+#: template-parts/sections/helpers.php:1795
+msgid "GLP-1 receptor agonist"
+msgstr ""
+
+#: single.php:35
+msgid "General information only. This article is not medical advice and does not replace an assessment by a licensed clinician."
+msgstr ""
+
+#: inc/customizer.php:26
+msgid "Header & footer text"
+msgstr ""
+
+#: home.php:24
+#: template-parts/sections/helpers.php:1335
+msgid "Home"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1820
+msgid "How it is understood to work"
+msgstr ""
+
+#: inc/template-tags.php:20
+msgid "How it works"
+msgstr ""
+
+#: home.php:28
+msgid "LEARN"
+msgstr ""
+
+#: footer.php:44
+msgid "LEGAL & SAFETY"
+msgstr ""
+
+#: header.php:56
+msgid "Main navigation"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1831
+msgid "Mechanism of action is described from published literature about this medication class. It is not a claim of effectiveness for any individual, and individual results vary."
+msgstr ""
+
+#: archive.php:34
+#: home.php:49
+#: index.php:34
+msgid "Next"
+msgstr ""
+
+#: template-parts/sections/helpers.php:920
+msgid "Next guide"
+msgstr ""
+
+#: home.php:54
+msgid "No articles published yet."
+msgstr ""
+
+#: search.php:39
+msgid "No results found. Try a different term."
+msgstr ""
+
+#: template-parts/sections/helpers.php:1713
+msgid "No treatments have been published yet. Add them under Treatments in the WordPress admin."
+msgstr ""
+
+#: archive.php:39
+#: index.php:39
+msgid "Nothing found here yet."
+msgstr ""
+
+#: footer.php:121
+msgid "Open the resource library"
+msgstr ""
+
+#: inc/setup.php:79
+msgid "Optional extra footer column."
+msgstr ""
+
+#: 404.php:17
+msgid "PAGE NOT FOUND"
+msgstr ""
+
+#: template-parts/sections/helpers.php:918
+msgid "Pause"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1251
+msgid "Phone"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1240
+msgid "Phone number"
+msgstr ""
+
+#: inc/customizer.php:34
+msgid "Phone number shown in the top strip"
+msgstr ""
+
+#: home.php:30
+msgid "Plain-language guides about weight-management treatment, eligibility and safety. General information only — not medical advice."
+msgstr ""
+
+#: template-parts/sections/helpers.php:1248
+msgid "Preferred contact method"
+msgstr ""
+
+#: archive.php:33
+#: home.php:48
+#: index.php:33
+msgid "Previous"
+msgstr ""
+
+#: template-parts/sections/helpers.php:913
+msgid "Previous guide"
+msgstr ""
+
+#: inc/template-tags.php:21
+msgid "Pricing"
+msgstr ""
+
+#: inc/setup.php:44
+msgid "Primary navigation"
+msgstr ""
+
+#: footer.php:114
+msgid "Questions to bring"
+msgstr ""
+
+#: header.php:38
+msgid "Questions welcome — no obligation"
+msgstr ""
+
+#: template-parts/card-post.php:23
+msgid "Read the article"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1802
+msgid "Receptor class"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1753
+msgid "Request a consultation"
+msgstr ""
+
+#: inc/template-tags.php:23
+msgid "Resources"
+msgstr ""
+
+#: search.php:21
+msgid "Results for “%s”"
+msgstr ""
+
+#: search.php:16
+msgid "SEARCH"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1858
+msgid "Safety information & contraindications"
+msgstr ""
+
+#: searchform.php:16
+msgid "Search"
+msgstr ""
+
+#: searchform.php:14
+msgid "Search this website"
+msgstr ""
+
+#: searchform.php:15
+msgid "Search…"
+msgstr ""
+
+#: inc/enqueue.php:33
+msgid "Sending…"
+msgstr ""
+
+#: inc/setup.php:68
+msgid "Shown beside blog posts and archives."
+msgstr ""
+
+#: header.php:20
+msgid "Skip to content"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1244
+msgid "State of residence"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1805
+msgid "Supplied by"
+msgstr ""
+
+#: 404.php:19
+msgid "The page may have moved. Try one of the links below, or search the site."
+msgstr ""
+
+#: template-parts/sections/helpers.php:1553
+msgid "This page is general information only. Have legal or clinical content reviewed before publication."
+msgstr ""
+
+#: footer.php:80
+#: inc/customizer.php:36
+msgid "This website provides general information about weight-management services. It is not medical advice and does not create a clinician–patient relationship. Prescription treatment is available only after an assessment by a licensed clinician, and not everyone is eligible. Individual results vary and are never guaranteed."
+msgstr ""
+
+#: header.php:52
+msgid "Toggle navigation"
+msgstr ""
+
+#: inc/customizer.php:33
+msgid "Top strip text"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1814
+msgid "Treatment information"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1863
+msgid "Treatment questions"
+msgstr ""
+
+#: inc/template-tags.php:19
+msgid "Treatments"
+msgstr ""
+
+#: inc/customizer.php:28
+msgid "Use Appearance → Menus for navigation. These fields control the small text strips above the header and in the footer."
+msgstr ""
+
+#: template-parts/sections/helpers.php:1605
+#: template-parts/sections/helpers.php:1672
+msgid "View treatment"
+msgstr ""
+
+#: 404.php:18
+msgid "We could not find that page."
+msgstr ""
+
+#: functions.php:36
+msgid "WeightLossAffordable:"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1853
+msgid "Who this may be suitable for"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1266
+msgid "Your message"
+msgstr ""
+
+#: template-parts/sections/helpers.php:1285
+msgid "Your reference: %s"
+msgstr ""
+
+#: functions.php:37
+msgid "install and activate the WeightLossAffordable Core plugin to manage treatments, forms and demo content."
+msgstr ""
+
+#: footer.php:86
+msgid "© %1$s %2$s. All rights reserved."
+msgstr ""
+

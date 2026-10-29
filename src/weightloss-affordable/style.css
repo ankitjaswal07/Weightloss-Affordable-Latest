@@ -1,0 +1,18 @@
+/*
+Theme Name: WeightLossAffordable
+Theme URI: https://weightlossaffordable.com/
+Author: WeightLossAffordable
+Author URI: https://weightlossaffordable.com/
+Description: Editorial telehealth and weight-management theme with a straw-and-forest palette, Fraunces and Manrope typography, a four-stage care journey board, an interactive guide explorer, a new product showcase section, and structured editing for every section in both the WordPress admin and Elementor. Requires the WeightLossAffordable Core plugin for treatments, forms and demo import.
+Version: 3.0.0
+Requires at least: 6.4
+Tested up to: 6.7
+Requires PHP: 7.4
+Text Domain: weightloss-affordable
+Domain Path: /languages
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom-logo, custom-menu, featured-images, full-width-template, translation-ready, blog, accessibility-ready, elementor
+*/
+
+/* All styles live in assets/css/theme.css and are enqueued by the theme. */

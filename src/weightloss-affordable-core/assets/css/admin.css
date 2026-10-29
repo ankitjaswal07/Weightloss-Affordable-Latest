@@ -1,0 +1,223 @@
+/* WeightLossAffordable admin styles. */
+
+.wla-admin__lead {
+    max-width: 70ch;
+    font-size: 14px;
+    color: #50575e;
+}
+
+.wla-admin__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+    max-width: 1400px;
+}
+
+.wla-admin__card {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
+}
+
+.wla-admin__card h2 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.wla-admin__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wla-admin__table th {
+    text-align: left;
+    font-weight: 600;
+    padding: 6px 8px 6px 0;
+    width: 42%;
+    vertical-align: top;
+}
+
+.wla-admin__table td {
+    padding: 6px 0;
+    vertical-align: top;
+}
+
+.wla-status {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.wla-status--ok { background: #00a32a; }
+.wla-status--warn { background: #dba617; }
+.wla-status--fail { background: #d63638; }
+
+.wla-admin__import {
+    margin-top: 12px;
+}
+
+.wla-admin__reset {
+    display: block;
+    margin: 0 0 12px;
+    font-size: 13px;
+    color: #50575e;
+}
+
+.wla-admin__warnings {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.wla-admin__note {
+    font-size: 13px;
+    color: #50575e;
+}
+
+.wla-admin__steps,
+.wla-admin__list {
+    padding-left: 18px;
+}
+
+.wla-admin__steps li,
+.wla-admin__list li {
+    margin-bottom: 8px;
+}
+
+/* Page sections meta box */
+
+.wla-section-list {
+    display: grid;
+    gap: 10px;
+}
+
+.wla-section {
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.wla-section__head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: #f6f7f7;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.wla-section__grip {
+    color: #a7aaad;
+}
+
+.wla-section__title {
+    flex: 1;
+    font-size: 13.5px;
+}
+
+.wla-section__tools {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.wla-section__body {
+    padding: 6px 16px 14px;
+}
+
+.wla-field {
+    margin: 0 0 12px;
+}
+
+.wla-field > label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.wla-repeater {
+    border: 1px dashed #c3c4c7;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 6px 0 16px;
+    background: #fbfbfc;
+}
+
+.wla-repeater__rows {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.wla-repeater__row {
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 8px 10px;
+    background: #fff;
+}
+
+.wla-repeater__fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 8px 12px;
+}
+
+.wla-repeater__fields .wla-field {
+    margin: 0;
+}
+
+.wla-repeater__actions {
+    margin: 6px 0 0;
+    display: flex;
+    gap: 12px;
+}
+
+.wla-section-add {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 14px;
+}
+
+/* Treatment meta box */
+
+.wla-treat-group {
+    border-top: 1px solid #f0f0f1;
+    padding-top: 8px;
+    margin-top: 12px;
+}
+
+.wla-treat-group h3 {
+    margin: 6px 0 12px;
+    font-size: 14px;
+}
+
+.wla-treat-group__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 4px 18px;
+}
+
+.wla-checklist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wla-checklist li {
+    margin-bottom: 8px;
+    line-height: 1.45;
+}
+
+.wla-checklist__mark {
+    display: inline-block;
+    width: 18px;
+    font-weight: 700;
+}
+
+.wla-checklist__mark.is-done { color: #00a32a; }
+.wla-checklist__mark.is-todo { color: #a7aaad; }

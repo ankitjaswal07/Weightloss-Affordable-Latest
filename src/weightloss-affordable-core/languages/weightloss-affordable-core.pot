@@ -1,0 +1,1650 @@
+# Translation template.
+# This file is distributed under the same license as the package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WeightLossAffordable Core 3.0.0\n"
+"Report-Msgid-Bugs-To: https://weightlossaffordable.com/\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: weightloss-affordable-core\n"
+
+#: includes/importer.php:733
+msgid "%1$d pages, %2$d treatments and %3$d articles are in place. Next: confirm your business details under WeightLossAffordable → Settings, then publish."
+msgstr ""
+
+#: includes/forms.php:111
+msgid "%1$s — %2$s — %3$s"
+msgstr ""
+
+#: includes/admin.php:166
+msgid "%d pages processed."
+msgstr ""
+
+#: includes/admin-fields.php:137
+#: includes/admin-sections.php:161
+msgid "+ Add row"
+msgstr ""
+
+#: includes/admin-sections.php:73
+msgid "+ Add section"
+msgstr ""
+
+#: includes/importer.php:576
+msgid "A navigation menu could not be created."
+msgstr ""
+
+#: includes/importer.php:312
+msgid "A page with the slug “%s” already exists and was left untouched. Delete or rename it, then run the import again to create the demo page."
+msgstr ""
+
+#: includes/importer.php:439
+msgid "A treatment category could not be assigned."
+msgstr ""
+
+#: includes/importer.php:397
+msgid "A treatment with the slug “%s” already exists and was left untouched."
+msgstr ""
+
+#: includes/schema.php:687
+msgid "Active ingredient"
+msgstr ""
+
+#: includes/schema.php:753
+msgid "Add a row for each distinct offering or dosing plan."
+msgstr ""
+
+#: includes/post-types.php:28
+msgid "Add new treatment"
+msgstr ""
+
+#: includes/post-types.php:85
+msgid "Add patient review"
+msgstr ""
+
+#: includes/post-types.php:27
+msgid "Add treatment"
+msgstr ""
+
+#: includes/post-types.php:63
+msgid "Add treatment category"
+msgstr ""
+
+#: includes/schema.php:690
+msgid "Administration frequency"
+msgstr ""
+
+#: includes/importer.php:306
+msgid "Adopted the default WordPress “%s” page and replaced its stub content with the demo content."
+msgstr ""
+
+#: includes/post-types.php:107
+msgid "All enquiries"
+msgstr ""
+
+#: includes/post-types.php:87
+msgid "All patient reviews"
+msgstr ""
+
+#: includes/post-types.php:36
+msgid "All treatments"
+msgstr ""
+
+#: includes/schema.php:345
+#: includes/schema.php:759
+msgid "Answer"
+msgstr ""
+
+#: includes/schema.php:282
+msgid "Ask button label"
+msgstr ""
+
+#: includes/schema.php:384
+msgid "Badge"
+msgstr ""
+
+#: includes/schema.php:315
+msgid "Badge label"
+msgstr ""
+
+#: includes/admin-fields.php:52
+msgid "Basic HTML is allowed (headings, lists, links, emphasis)."
+msgstr ""
+
+#: includes/admin.php:297
+msgid "Before publishing, confirm prices, service area and clinical content."
+msgstr ""
+
+#: includes/schema.php:750
+msgid "Billing period"
+msgstr ""
+
+#: includes/schema.php:700
+msgid "Billing period label"
+msgstr ""
+
+#: includes/settings.php:95
+msgid "Blocks fast automated submissions."
+msgstr ""
+
+#: includes/schema.php:434
+msgid "Body (HTML allowed)"
+msgstr ""
+
+#: includes/elementor.php:188
+msgid "Bottom spacing"
+msgstr ""
+
+#: includes/schema.php:142
+msgid "Bullet points (one per line)"
+msgstr ""
+
+#: includes/schema.php:230
+msgid "Bullets (one per line)"
+msgstr ""
+
+#: includes/schema.php:389
+msgid "Bullets (one per line, optional)"
+msgstr ""
+
+#: includes/importer.php:87
+msgid "Bundled demo image."
+msgstr ""
+
+#: includes/settings.php:84
+msgid "Business address"
+msgstr ""
+
+#: includes/settings.php:79
+msgid "Business details"
+msgstr ""
+
+#: includes/settings.php:85
+msgid "Business hours"
+msgstr ""
+
+#: includes/settings.php:81
+msgid "Business name"
+msgstr ""
+
+#: includes/schema.php:716
+msgid "Button URL"
+msgstr ""
+
+#: includes/schema.php:214
+#: includes/schema.php:231
+#: includes/schema.php:715
+msgid "Button label"
+msgstr ""
+
+#: includes/schema.php:215
+#: includes/schema.php:232
+msgid "Button link"
+msgstr ""
+
+#: includes/schema.php:713
+msgid "Call to action"
+msgstr ""
+
+#: includes/schema.php:316
+msgid "Caption"
+msgstr ""
+
+#: includes/schema.php:451
+msgid "Card button label"
+msgstr ""
+
+#: includes/schema.php:163
+msgid "Card grid (services / treatments)"
+msgstr ""
+
+#: includes/schema.php:170
+msgid "Cards"
+msgstr ""
+
+#: includes/post-types.php:66
+msgid "Categories"
+msgstr ""
+
+#: includes/schema.php:295
+msgid "Category"
+msgstr ""
+
+#: includes/admin-fields.php:77
+msgid "Choose from the media library, or enter a theme image file name (for example hero-care.jpg)."
+msgstr ""
+
+#: includes/admin-fields.php:74
+#: includes/admin-seo.php:66
+msgid "Choose image"
+msgstr ""
+
+#: includes/admin-fields.php:75
+#: includes/admin-seo.php:67
+msgid "Clear"
+msgstr ""
+
+#: includes/settings.php:101
+msgid "Clinical review & locale"
+msgstr ""
+
+#: includes/settings.php:103
+msgid "Clinical reviewer (name & credentials)"
+msgstr ""
+
+#: includes/compliance.php:79
+msgid "Clinically reviewed by %s"
+msgstr ""
+
+#: includes/importer.php:663
+msgid "Clinician-led weight care with clear pricing and honest information."
+msgstr ""
+
+#: includes/schema.php:397
+msgid "Closing CTA band"
+msgstr ""
+
+#: includes/settings.php:94
+msgid "Comma-separated email addresses."
+msgstr ""
+
+#: includes/schema.php:699
+msgid "Comparison price (optional)"
+msgstr ""
+
+#: includes/schema.php:147
+msgid "Compliance note"
+msgstr ""
+
+#: includes/settings.php:29
+msgid "Compounded medications are prepared by state-licensed pharmacies under a prescription from a licensed clinician."
+msgstr ""
+
+#: includes/settings.php:28
+msgid "Confirm with your clinical partner before publishing"
+msgstr ""
+
+#: includes/admin.php:223
+msgid "Confirm your business details, prices and notification recipients in %s."
+msgstr ""
+
+#: includes/schema.php:366
+msgid "Consent label"
+msgstr ""
+
+#: includes/schema.php:354
+msgid "Contact form section"
+msgstr ""
+
+#: includes/schema.php:333
+msgid "Contact link label"
+msgstr ""
+
+#: includes/elementor.php:123
+msgid "Content"
+msgstr ""
+
+#: includes/schema.php:708
+msgid "Contraindications & safety information"
+msgstr ""
+
+#: includes/importer.php:335
+#: includes/importer.php:419
+#: includes/importer.php:532
+msgid "Could not import “%1$s”: %2$s"
+msgstr ""
+
+#: includes/admin.php:179
+msgid "Creates the full English demo site: 19 pages, 2 treatment records, 3 articles, menus, Elementor layouts and the settings needed to publish."
+msgstr ""
+
+#: includes/settings.php:105
+msgid "Currency code"
+msgstr ""
+
+#: includes/settings.php:106
+msgid "Currency symbol"
+msgstr ""
+
+#: includes/admin.php:28
+msgid "Dashboard & demo import"
+msgstr ""
+
+#: includes/admin.php:29
+msgid "Dashboard & import"
+msgstr ""
+
+#: includes/admin-sections.php:114
+msgid "Delete"
+msgstr ""
+
+#: includes/admin.php:147
+msgid "Demo import complete"
+msgstr ""
+
+#: includes/schema.php:743
+msgid "Describe the mechanism of action in neutral, non-promissory language."
+msgstr ""
+
+#: includes/schema.php:128
+#: includes/schema.php:177
+#: includes/schema.php:208
+#: includes/schema.php:69
+#: includes/schema.php:741
+msgid "Description"
+msgstr ""
+
+#: includes/compliance.php:46
+msgid "Disclaimer is present"
+msgstr ""
+
+#: includes/schema.php:680
+msgid "Display order"
+msgstr ""
+
+#: includes/settings.php:34
+msgid "Do not include medical details in a general enquiry form. The consultation questionnaire is the secure place for health information."
+msgstr ""
+
+#: includes/schema.php:689
+msgid "Dosage form"
+msgstr ""
+
+#: includes/admin-sections.php:113
+msgid "Edit"
+msgstr ""
+
+#: includes/post-types.php:86
+msgid "Edit patient review"
+msgstr ""
+
+#: includes/post-types.php:29
+msgid "Edit treatment"
+msgstr ""
+
+#: includes/post-types.php:64
+msgid "Edit treatment category"
+msgstr ""
+
+#: includes/schema.php:286
+msgid "Editorial note body"
+msgstr ""
+
+#: includes/schema.php:285
+msgid "Editorial note title"
+msgstr ""
+
+#: includes/admin.php:70
+msgid "Elementor"
+msgstr ""
+
+#: includes/importer.php:723
+msgid "Elementor is not active. Layouts were stored and will open in Elementor once the free plugin is installed and activated."
+msgstr ""
+
+#: includes/schema.php:705
+msgid "Eligibility & safety"
+msgstr ""
+
+#: includes/schema.php:707
+msgid "Eligibility information"
+msgstr ""
+
+#: includes/compliance.php:45
+msgid "Eligibility wording does not promise treatment"
+msgstr ""
+
+#: includes/forms.php:304
+#: includes/forms.php:335
+msgid "Email"
+msgstr ""
+
+#: includes/admin.php:113
+msgid "Email delivery"
+msgstr ""
+
+#: includes/settings.php:93
+msgid "Email new enquiries to the site admin"
+msgstr ""
+
+#: includes/forms.php:203
+msgid "Email: %s"
+msgstr ""
+
+#: includes/admin.php:243
+#: includes/admin.php:45
+#: includes/admin.php:46
+#: includes/post-types.php:105
+#: includes/post-types.php:109
+msgid "Enquiries"
+msgstr ""
+
+#: includes/admin.php:116
+msgid "Enquiries are stored in WordPress regardless. If wp_mail() is not configured, install an SMTP plugin."
+msgstr ""
+
+#: includes/forms.php:322
+msgid "Enquiries are stored privately and deleted automatically after the retention period set in Settings."
+msgstr ""
+
+#: includes/forms.php:334
+#: includes/post-types.php:106
+msgid "Enquiry"
+msgstr ""
+
+#: includes/forms.php:284
+msgid "Enquiry details"
+msgstr ""
+
+#: includes/settings.php:96
+msgid "Enquiry retention (days)"
+msgstr ""
+
+#: includes/admin.php:196
+msgid "Environment"
+msgstr ""
+
+#: includes/schema.php:369
+msgid "Error message"
+msgstr ""
+
+#: includes/schema.php:414
+msgid "Explore other pages grid"
+msgstr ""
+
+#: includes/schema.php:109
+#: includes/schema.php:126
+#: includes/schema.php:167
+#: includes/schema.php:196
+#: includes/schema.php:227
+#: includes/schema.php:247
+#: includes/schema.php:275
+#: includes/schema.php:312
+#: includes/schema.php:330
+#: includes/schema.php:358
+#: includes/schema.php:381
+#: includes/schema.php:400
+#: includes/schema.php:431
+#: includes/schema.php:446
+#: includes/schema.php:64
+msgid "Eyebrow"
+msgstr ""
+
+#: includes/schema.php:326
+msgid "FAQ accordion"
+msgstr ""
+
+#: includes/schema.php:679
+msgid "Feature this treatment"
+msgstr ""
+
+#: includes/schema.php:280
+msgid "Featured label"
+msgstr ""
+
+#: includes/schema.php:77
+msgid "Floating card subtitle"
+msgstr ""
+
+#: includes/schema.php:76
+msgid "Floating card title"
+msgstr ""
+
+#: includes/importer.php:560
+msgid "Footer explore"
+msgstr ""
+
+#: includes/importer.php:564
+msgid "Footer legal"
+msgstr ""
+
+#: includes/schema.php:213
+msgid "Footnote"
+msgstr ""
+
+#: includes/schema.php:365
+msgid "Form card subtitle"
+msgstr ""
+
+#: includes/schema.php:364
+msgid "Form card title"
+msgstr ""
+
+#: includes/settings.php:97
+msgid "Form disclaimer"
+msgstr ""
+
+#: includes/settings.php:91
+msgid "Form notifications"
+msgstr ""
+
+#: includes/forms.php:302
+#: includes/schema.php:363
+msgid "Form type"
+msgstr ""
+
+#: includes/admin.php:73
+msgid "Free Elementor is enough for visual editing. Elementor Pro is only needed for Theme Builder headers and footers."
+msgstr ""
+
+#: includes/schema.php:334
+msgid "Full FAQ link label"
+msgstr ""
+
+#: includes/importer.php:471
+msgid "General information only — your clinician will answer questions about your own situation."
+msgstr ""
+
+#: includes/schema.php:271
+msgid "Guide explorer"
+msgstr ""
+
+#: includes/schema.php:288
+msgid "Guides"
+msgstr ""
+
+#: includes/schema.php:110
+#: includes/schema.php:127
+#: includes/schema.php:168
+#: includes/schema.php:197
+#: includes/schema.php:228
+#: includes/schema.php:248
+#: includes/schema.php:276
+#: includes/schema.php:313
+#: includes/schema.php:331
+#: includes/schema.php:359
+#: includes/schema.php:382
+#: includes/schema.php:401
+#: includes/schema.php:432
+#: includes/schema.php:447
+msgid "Heading"
+msgstr ""
+
+#: includes/schema.php:417
+msgid "Heading label"
+msgstr ""
+
+#: includes/schema.php:66
+msgid "Headline — italic accent word"
+msgstr ""
+
+#: includes/schema.php:65
+msgid "Headline — line 1"
+msgstr ""
+
+#: includes/schema.php:68
+msgid "Headline — line 3"
+msgstr ""
+
+#: includes/schema.php:67
+msgid "Headline — text after accent word"
+msgstr ""
+
+#: includes/schema.php:61
+msgid "Hero (top of page)"
+msgstr ""
+
+#: includes/schema.php:385
+#: includes/schema.php:74
+msgid "Hero image"
+msgstr ""
+
+#: includes/schema.php:386
+#: includes/schema.php:75
+msgid "Hero image alt text"
+msgstr ""
+
+#: includes/elementor.php:198
+msgid "Hide on mobile"
+msgstr ""
+
+#: includes/admin-seo.php:76
+msgid "Hide this page from search engines (noindex)"
+msgstr ""
+
+#: includes/schema.php:112
+msgid "Highlighted note"
+msgstr ""
+
+#: includes/seo.php:212
+msgid "Home"
+msgstr ""
+
+#: includes/schema.php:737
+msgid "How it works / benefits"
+msgstr ""
+
+#: includes/schema.php:180
+#: includes/schema.php:739
+msgid "Icon"
+msgstr ""
+
+#: includes/schema.php:233
+msgid "Image"
+msgstr ""
+
+#: includes/schema.php:299
+msgid "Image (optional)"
+msgstr ""
+
+#: includes/schema.php:223
+msgid "Image + text split"
+msgstr ""
+
+#: includes/schema.php:234
+msgid "Image alt text"
+msgstr ""
+
+#: includes/schema.php:131
+msgid "Image badge"
+msgstr ""
+
+#: includes/admin.php:191
+msgid "Import demo content"
+msgstr ""
+
+#: includes/admin.php:147
+msgid "Import stopped"
+msgstr ""
+
+#: includes/admin.php:218
+msgid "Import the demo content."
+msgstr ""
+
+#: includes/schema.php:105
+msgid "Intro / point of view"
+msgstr ""
+
+#: includes/schema.php:169
+#: includes/schema.php:198
+#: includes/schema.php:332
+#: includes/schema.php:448
+msgid "Intro copy"
+msgstr ""
+
+#: includes/schema.php:190
+msgid "Journey board (steps)"
+msgstr ""
+
+#: includes/schema.php:139
+#: includes/schema.php:154
+#: includes/schema.php:260
+#: includes/schema.php:87
+msgid "Label"
+msgstr ""
+
+#: includes/settings.php:104
+msgid "Last clinical review date"
+msgstr ""
+
+#: includes/schema.php:433
+msgid "Last reviewed line"
+msgstr ""
+
+#: includes/schema.php:277
+#: includes/schema.php:383
+msgid "Lead paragraph"
+msgstr ""
+
+#: includes/admin-seo.php:52
+msgid "Leave the title blank to use the page title and site name. Aim for a description of roughly 150–160 characters."
+msgstr ""
+
+#: includes/schema.php:114
+#: includes/schema.php:179
+#: includes/schema.php:251
+#: includes/schema.php:318
+msgid "Link URL"
+msgstr ""
+
+#: includes/schema.php:113
+#: includes/schema.php:178
+#: includes/schema.php:250
+#: includes/schema.php:317
+msgid "Link label"
+msgstr ""
+
+#: includes/admin.php:233
+msgid "Manage treatments"
+msgstr ""
+
+#: includes/schema.php:449
+msgid "Maximum number of treatments"
+msgstr ""
+
+#: includes/admin-treatments.php:141
+msgid "Medication"
+msgstr ""
+
+#: includes/schema.php:684
+msgid "Medication details"
+msgstr ""
+
+#: includes/compliance.php:48
+msgid "Medication name and active ingredient verified with the pharmacy"
+msgstr ""
+
+#: includes/schema.php:692
+msgid "Medication notes"
+msgstr ""
+
+#: includes/forms.php:309
+msgid "Message"
+msgstr ""
+
+#: includes/forms.php:213
+msgid "Message:"
+msgstr ""
+
+#: includes/admin-seo.php:59
+#: includes/schema.php:723
+msgid "Meta description"
+msgstr ""
+
+#: includes/schema.php:148
+msgid "Metric strip"
+msgstr ""
+
+#: includes/settings.php:95
+msgid "Minimum seconds before a form can be submitted"
+msgstr ""
+
+#: includes/settings.php:27
+msgid "Monday–Friday, 9am–5pm"
+msgstr ""
+
+#: includes/schema.php:698
+msgid "Monthly price (number or text)"
+msgstr ""
+
+#: includes/admin-fields.php:192
+msgid "Move down"
+msgstr ""
+
+#: includes/admin-sections.php:112
+msgid "Move section down"
+msgstr ""
+
+#: includes/admin-sections.php:111
+msgid "Move section up"
+msgstr ""
+
+#: includes/admin-fields.php:192
+msgid "Move up"
+msgstr ""
+
+#: includes/forms.php:303
+msgid "Name"
+msgstr ""
+
+#: includes/forms.php:202
+msgid "Name: %s"
+msgstr ""
+
+#: includes/forms.php:194
+msgid "New %1$s enquiry (%2$s)"
+msgstr ""
+
+#: includes/post-types.php:30
+msgid "New treatment"
+msgstr ""
+
+#: includes/admin.php:216
+msgid "Next steps"
+msgstr ""
+
+#: includes/schema.php:679
+#: includes/settings.php:93
+msgid "No"
+msgstr ""
+
+#: includes/post-types.php:110
+msgid "No enquiries yet."
+msgstr ""
+
+#: includes/admin-sections.php:58
+msgid "No sections yet. Add one below — or use Elementor to build the page."
+msgstr ""
+
+#: includes/compliance.php:47
+msgid "No testimonial, photo or before/after image is used without consent"
+msgstr ""
+
+#: includes/post-types.php:35
+msgid "No treatments found in the bin."
+msgstr ""
+
+#: includes/post-types.php:34
+msgid "No treatments found."
+msgstr ""
+
+#: includes/schema.php:263
+#: includes/schema.php:454
+#: includes/schema.php:751
+msgid "Note"
+msgstr ""
+
+#: includes/schema.php:182
+msgid "Note under the grid"
+msgstr ""
+
+#: includes/settings.php:94
+msgid "Notification recipients"
+msgstr ""
+
+#: includes/settings.php:96
+msgid "Older enquiries are deleted automatically. 0 disables automatic deletion."
+msgstr ""
+
+#: includes/schema.php:678
+msgid "One or two sentences shown in treatment listings."
+msgstr ""
+
+#: includes/admin.php:178
+msgid "One-click demo import"
+msgstr ""
+
+#: includes/admin-treatments.php:42
+msgid "Only publish information you can verify. Fields left blank are hidden on the front end rather than shown empty."
+msgstr ""
+
+#: includes/settings.php:86
+msgid "Only state a service area you can verify with your clinical partner."
+msgstr ""
+
+#: includes/admin.php:299
+msgid "Open settings"
+msgstr ""
+
+#: includes/admin-treatments.php:143
+msgid "Order"
+msgstr ""
+
+#: includes/schema.php:676
+msgid "Overview"
+msgstr ""
+
+#: includes/admin.php:87
+msgid "PHP 7.4 or newer is required."
+msgstr ""
+
+#: includes/admin.php:84
+msgid "PHP version"
+msgstr ""
+
+#: includes/schema.php:378
+msgid "Page hero (inner pages)"
+msgstr ""
+
+#: includes/admin-sections.php:23
+msgid "Page sections"
+msgstr ""
+
+#: includes/admin.php:241
+msgid "Pages"
+msgstr ""
+
+#: includes/schema.php:194
+msgid "Panel label (left)"
+msgstr ""
+
+#: includes/schema.php:195
+msgid "Panel label (right)"
+msgstr ""
+
+#: includes/schema.php:111
+#: includes/schema.php:229
+#: includes/schema.php:249
+#: includes/schema.php:314
+#: includes/schema.php:360
+#: includes/schema.php:402
+msgid "Paragraph"
+msgstr ""
+
+#: includes/post-types.php:84
+msgid "Patient review"
+msgstr ""
+
+#: includes/post-types.php:83
+msgid "Patient reviews"
+msgstr ""
+
+#: includes/admin.php:98
+msgid "Permalinks"
+msgstr ""
+
+#: includes/importer.php:651
+msgid "Permalinks were switched to “Post name”. If you use a caching plugin, purge it."
+msgstr ""
+
+#: includes/schema.php:691
+msgid "Pharmacy / supplier statement"
+msgstr ""
+
+#: includes/settings.php:87
+msgid "Pharmacy statement"
+msgstr ""
+
+#: includes/forms.php:305
+msgid "Phone"
+msgstr ""
+
+#: includes/forms.php:206
+msgid "Phone: %s"
+msgstr ""
+
+#: includes/schema.php:235
+msgid "Photo caption"
+msgstr ""
+
+#: includes/forms.php:78
+msgid "Please add a short message (at least 10 characters)."
+msgstr ""
+
+#: includes/forms.php:84
+msgid "Please confirm you agree to the privacy notice."
+msgstr ""
+
+#: includes/forms.php:75
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: includes/forms.php:72
+msgid "Please enter your name."
+msgstr ""
+
+#: includes/forms.php:60
+msgid "Please take a moment to review your message before sending."
+msgstr ""
+
+#: includes/forms.php:81
+msgid "Please tell us your state so we can confirm where care is available."
+msgstr ""
+
+#: includes/forms.php:307
+msgid "Preferred contact method"
+msgstr ""
+
+#: includes/admin-treatments.php:142
+#: includes/schema.php:749
+msgid "Price"
+msgstr ""
+
+#: includes/compliance.php:43
+msgid "Price and billing period match what the pharmacy will charge"
+msgstr ""
+
+#: includes/schema.php:701
+msgid "Price note"
+msgstr ""
+
+#: includes/schema.php:254
+msgid "Price rows"
+msgstr ""
+
+#: includes/schema.php:387
+msgid "Price tag (optional)"
+msgstr ""
+
+#: includes/schema.php:388
+msgid "Price tag note"
+msgstr ""
+
+#: includes/schema.php:696
+msgid "Pricing"
+msgstr ""
+
+#: includes/schema.php:243
+msgid "Pricing panel"
+msgstr ""
+
+#: includes/schema.php:143
+#: includes/schema.php:403
+#: includes/schema.php:465
+#: includes/schema.php:70
+msgid "Primary button label"
+msgstr ""
+
+#: includes/schema.php:144
+#: includes/schema.php:404
+#: includes/schema.php:466
+#: includes/schema.php:71
+msgid "Primary button link"
+msgstr ""
+
+#: includes/importer.php:556
+msgid "Primary menu"
+msgstr ""
+
+#: includes/schema.php:361
+msgid "Privacy note"
+msgstr ""
+
+#: includes/schema.php:686
+msgid "Product / medication name"
+msgstr ""
+
+#: includes/schema.php:129
+msgid "Product image"
+msgstr ""
+
+#: includes/schema.php:130
+msgid "Product image alt text"
+msgstr ""
+
+#: includes/schema.php:122
+msgid "Product showcase"
+msgstr ""
+
+#: includes/schema.php:132
+msgid "Product specification rows"
+msgstr ""
+
+#: includes/schema.php:212
+msgid "Progress label"
+msgstr ""
+
+#: includes/schema.php:297
+msgid "Prompt line"
+msgstr ""
+
+#: includes/schema.php:84
+msgid "Proof stats (3 recommended)"
+msgstr ""
+
+#: includes/settings.php:82
+msgid "Public contact email"
+msgstr ""
+
+#: includes/settings.php:83
+msgid "Public phone number"
+msgstr ""
+
+#: includes/compliance.php:26
+msgid "Publishing checklist"
+msgstr ""
+
+#: includes/schema.php:344
+#: includes/schema.php:758
+msgid "Question"
+msgstr ""
+
+#: includes/schema.php:336
+msgid "Questions"
+msgstr ""
+
+#: includes/schema.php:298
+msgid "Questions (one per line)"
+msgstr ""
+
+#: includes/importer.php:470
+msgid "Questions about this treatment"
+msgstr ""
+
+#: includes/schema.php:283
+msgid "Questions card heading"
+msgstr ""
+
+#: includes/schema.php:284
+msgid "Questions card note"
+msgstr ""
+
+#: includes/schema.php:281
+msgid "Read button label"
+msgstr ""
+
+#: includes/schema.php:296
+msgid "Read time"
+msgstr ""
+
+#: includes/importer.php:482
+msgid "Ready to find out whether treatment is appropriate for you?"
+msgstr ""
+
+#: includes/schema.php:362
+msgid "Reassurance items (one per line)"
+msgstr ""
+
+#: includes/forms.php:337
+msgid "Received"
+msgstr ""
+
+#: includes/schema.php:688
+msgid "Receptor class"
+msgstr ""
+
+#: includes/forms.php:301
+msgid "Reference"
+msgstr ""
+
+#: includes/forms.php:200
+msgid "Reference: %s"
+msgstr ""
+
+#: includes/admin-fields.php:192
+msgid "Remove"
+msgstr ""
+
+#: includes/importer.php:484
+msgid "Request a consultation"
+msgstr ""
+
+#: includes/importer.php:483
+msgid "Request a consultation and a licensed clinician will review your history. Not everyone is eligible, and no outcome is guaranteed."
+msgstr ""
+
+#: includes/schema.php:709
+msgid "Required disclaimer"
+msgstr ""
+
+#: includes/admin.php:189
+msgid "Reset: first delete records created by a previous import (your own content is kept)."
+msgstr ""
+
+#: includes/importer.php:770
+msgid "Reset: removed %d previously imported records. Content created by you was not touched."
+msgstr ""
+
+#: includes/admin.php:228
+msgid "Review the clinical and legal content with your clinician and counsel."
+msgstr ""
+
+#: includes/admin.php:244
+#: includes/post-types.php:88
+msgid "Reviews"
+msgstr ""
+
+#: includes/schema.php:308
+msgid "Reviews / trust panel"
+msgstr ""
+
+#: includes/schema.php:427
+msgid "Rich text block"
+msgstr ""
+
+#: includes/schema.php:80
+msgid "Rotating badge text"
+msgstr ""
+
+#: includes/admin.php:181
+msgid "Running it again updates the imported records instead of duplicating them. Your own pages, posts and treatments are never modified or deleted."
+msgstr ""
+
+#: includes/schema.php:720
+msgid "SEO"
+msgstr ""
+
+#: includes/admin-seo.php:26
+msgid "SEO and social preview"
+msgstr ""
+
+#: includes/admin-seo.php:55
+#: includes/schema.php:722
+msgid "SEO title"
+msgstr ""
+
+#: includes/compliance.php:44
+msgid "Safety text has been reviewed by a licensed clinician"
+msgstr ""
+
+#: includes/settings.php:170
+msgid "Save settings"
+msgstr ""
+
+#: includes/schema.php:81
+msgid "Scroll indicator label"
+msgstr ""
+
+#: includes/schema.php:97
+msgid "Scrolling strip items (one per line)"
+msgstr ""
+
+#: includes/post-types.php:65
+msgid "Search treatment categories"
+msgstr ""
+
+#: includes/post-types.php:33
+msgid "Search treatments"
+msgstr ""
+
+#: includes/schema.php:145
+#: includes/schema.php:405
+#: includes/schema.php:467
+#: includes/schema.php:72
+msgid "Secondary button label"
+msgstr ""
+
+#: includes/schema.php:146
+#: includes/schema.php:406
+#: includes/schema.php:468
+#: includes/schema.php:73
+msgid "Secondary button link"
+msgstr ""
+
+#: includes/schema.php:452
+msgid "Section button label"
+msgstr ""
+
+#: includes/schema.php:453
+msgid "Section button link"
+msgstr ""
+
+#: includes/schema.php:472
+msgid "Section note"
+msgstr ""
+
+#: includes/schema.php:108
+#: includes/schema.php:125
+#: includes/schema.php:166
+#: includes/schema.php:193
+#: includes/schema.php:226
+#: includes/schema.php:246
+#: includes/schema.php:274
+#: includes/schema.php:311
+#: includes/schema.php:329
+#: includes/schema.php:357
+#: includes/schema.php:430
+#: includes/schema.php:445
+msgid "Section number"
+msgstr ""
+
+#: includes/settings.php:86
+msgid "Service area"
+msgstr ""
+
+#: includes/admin.php:230
+msgid "Set Settings → General → Site Language to English if it is not already."
+msgstr ""
+
+#: includes/admin.php:224
+#: includes/settings.php:62
+#: includes/settings.php:63
+msgid "Settings"
+msgstr ""
+
+#: includes/settings.php:139
+msgid "Settings saved."
+msgstr ""
+
+#: includes/schema.php:678
+msgid "Short description (used on cards)"
+msgstr ""
+
+#: includes/schema.php:450
+#: includes/schema.php:469
+msgid "Show pricing"
+msgstr ""
+
+#: includes/schema.php:471
+msgid "Show safety information"
+msgstr ""
+
+#: includes/schema.php:335
+msgid "Show the “full FAQ” link"
+msgstr ""
+
+#: includes/schema.php:470
+msgid "Show treatment FAQs"
+msgstr ""
+
+#: includes/settings.php:104
+msgid "Shown on medical pages once entered."
+msgstr ""
+
+#: includes/admin.php:91
+msgid "Site language"
+msgstr ""
+
+#: includes/schema.php:419
+msgid "Slugs to exclude (comma separated)"
+msgstr ""
+
+#: includes/schema.php:78
+msgid "Small badge label"
+msgstr ""
+
+#: includes/schema.php:79
+msgid "Small badge title"
+msgstr ""
+
+#: includes/schema.php:210
+msgid "Small label"
+msgstr ""
+
+#: includes/admin-seo.php:63
+msgid "Social sharing image (optional)"
+msgstr ""
+
+#: includes/elementor.php:171
+msgid "Spacing"
+msgstr ""
+
+#: includes/forms.php:306
+msgid "State"
+msgstr ""
+
+#: includes/forms.php:209
+msgid "State: %s"
+msgstr ""
+
+#: includes/admin.php:106
+msgid "Static homepage"
+msgstr ""
+
+#: includes/schema.php:252
+msgid "Status label"
+msgstr ""
+
+#: includes/schema.php:253
+msgid "Status sub-label"
+msgstr ""
+
+#: includes/schema.php:206
+msgid "Step number"
+msgstr ""
+
+#: includes/schema.php:200
+msgid "Steps"
+msgstr ""
+
+#: includes/schema.php:367
+msgid "Submit button label"
+msgstr ""
+
+#: includes/forms.php:310
+msgid "Submitted from"
+msgstr ""
+
+#: includes/schema.php:368
+msgid "Success message"
+msgstr ""
+
+#: includes/schema.php:294
+msgid "Summary"
+msgstr ""
+
+#: includes/schema.php:199
+msgid "Summary chips (one per line)"
+msgstr ""
+
+#: includes/admin.php:80
+msgid "Supported from WordPress 6.4; tested to 6.7."
+msgstr ""
+
+#: includes/importer.php:469
+msgid "TREATMENT QUESTIONS"
+msgstr ""
+
+#: includes/schema.php:175
+msgid "Tag"
+msgstr ""
+
+#: includes/admin.php:229
+msgid "Test the contact form and confirm the notification email arrives."
+msgstr ""
+
+#: includes/forms.php:158
+msgid "Thank you — your message has been received. A member of the team will reply within 1–2 business days."
+msgstr ""
+
+#: includes/importer.php:696
+msgid "The WeightLossAffordable theme is not active. Activate it before importing so the section renderers exist."
+msgstr ""
+
+#: includes/admin.php:66
+msgid "The WeightLossAffordable theme provides the section renderers."
+msgstr ""
+
+#: includes/elementor-widget.php:154
+msgid "The active theme does not provide this section. Activate the WeightLossAffordable theme."
+msgstr ""
+
+#: includes/importer.php:647
+msgid "The default WordPress “Hello world!” post was moved to drafts so it does not appear on the Articles page. It was not deleted."
+msgstr ""
+
+#: includes/importer.php:634
+msgid "The default WordPress “Sample Page” is still published. Delete it in Pages when you are ready."
+msgstr ""
+
+#: includes/admin.php:109
+msgid "The importer sets a static front page automatically."
+msgstr ""
+
+#: includes/admin.php:63
+msgid "Theme"
+msgstr ""
+
+#: includes/admin-sections.php:47
+msgid "These are the sections rendered on this page, in order. Edit the text here, or open Elementor to design the layout visually — both editors edit the same sections."
+msgstr ""
+
+#: includes/admin.php:94
+msgid "This build ships English content. Switch the site language in Settings → General → Site Language."
+msgstr ""
+
+#: includes/compliance.php:62
+msgid "This checklist is a reminder, not an approval. Clinical, legal and regulatory sign-off is still required before launch."
+msgstr ""
+
+#: includes/admin-sections.php:51
+msgid "This page is built with Elementor. Changes saved here are written into the Elementor document as well."
+msgstr ""
+
+#: includes/admin.php:140
+msgid "This plugin owns the treatments, enquiry forms, SEO output and demo content. The theme owns the design. Both are needed for the full site."
+msgstr ""
+
+#: includes/schema.php:209
+msgid "Timing / meta"
+msgstr ""
+
+#: includes/schema.php:176
+#: includes/schema.php:207
+#: includes/schema.php:293
+#: includes/schema.php:740
+msgid "Title"
+msgstr ""
+
+#: includes/forms.php:68
+msgid "Too many messages have been sent from this connection. Please try again later."
+msgstr ""
+
+#: includes/elementor.php:178
+msgid "Top spacing"
+msgstr ""
+
+#: includes/forms.php:308
+msgid "Topic"
+msgstr ""
+
+#: includes/schema.php:370
+msgid "Topic options (one per line, value|label)"
+msgstr ""
+
+#: includes/schema.php:287
+msgid "Topic strip items (one per line)"
+msgstr ""
+
+#: includes/forms.php:211
+msgid "Topic: %s"
+msgstr ""
+
+#: includes/post-types.php:26
+msgid "Treatment"
+msgstr ""
+
+#: includes/schema.php:756
+msgid "Treatment FAQs"
+msgstr ""
+
+#: includes/post-types.php:61
+msgid "Treatment categories"
+msgstr ""
+
+#: includes/post-types.php:62
+msgid "Treatment category"
+msgstr ""
+
+#: includes/schema.php:462
+msgid "Treatment detail (dynamic)"
+msgstr ""
+
+#: includes/admin-treatments.php:22
+msgid "Treatment details"
+msgstr ""
+
+#: includes/schema.php:442
+msgid "Treatment grid (dynamic)"
+msgstr ""
+
+#: includes/schema.php:746
+msgid "Treatment variations / plans"
+msgstr ""
+
+#: includes/admin.php:242
+#: includes/admin.php:37
+#: includes/admin.php:38
+#: includes/post-types.php:25
+#: includes/post-types.php:37
+msgid "Treatments"
+msgstr ""
+
+#: includes/forms.php:336
+msgid "Type"
+msgstr ""
+
+#: includes/forms.php:201
+msgid "Type: %s"
+msgstr ""
+
+#: includes/schema.php:140
+#: includes/schema.php:153
+#: includes/schema.php:261
+#: includes/schema.php:86
+msgid "Value"
+msgstr ""
+
+#: includes/schema.php:748
+msgid "Variation name"
+msgstr ""
+
+#: includes/post-types.php:108
+msgid "View enquiry"
+msgstr ""
+
+#: includes/forms.php:216
+msgid "View in WordPress: %s"
+msgstr ""
+
+#: includes/admin.php:234
+msgid "View site"
+msgstr ""
+
+#: includes/post-types.php:31
+msgid "View treatment"
+msgstr ""
+
+#: includes/post-types.php:32
+msgid "View treatments"
+msgstr ""
+
+#: includes/forms.php:138
+msgid "We could not save your message. Please try again, or email us directly."
+msgstr ""
+
+#: includes/admin.php:138
+#: includes/admin.php:17
+#: includes/admin.php:18
+msgid "WeightLossAffordable"
+msgstr ""
+
+#: includes/admin.php:296
+msgid "WeightLossAffordable demo content is installed."
+msgstr ""
+
+#: includes/elementor.php:28
+msgid "WeightLossAffordable sections"
+msgstr ""
+
+#: includes/settings.php:137
+msgid "WeightLossAffordable settings"
+msgstr ""
+
+#: includes/admin.php:239
+msgid "Where things live"
+msgstr ""
+
+#: includes/admin.php:77
+msgid "WordPress version"
+msgstr ""
+
+#: includes/schema.php:679
+#: includes/settings.php:93
+msgid "Yes"
+msgstr ""
+
+#: includes/importer.php:783
+msgid "You do not have permission to run the importer."
+msgstr ""
+
+#: includes/forms.php:53
+msgid "Your message could not be sent."
+msgstr ""
+
+#: includes/forms.php:266
+msgid "Your session expired. Please reload the page and try again."
+msgstr ""
+
+#: includes/admin.php:71
+msgid "active"
+msgstr ""
+
+#: includes/admin.php:241
+msgid "edit page content in Elementor, or in the “Page sections” box below the editor."
+msgstr ""
+
+#: includes/compliance.php:83
+msgid "last reviewed %s"
+msgstr ""
+
+#: includes/admin.php:71
+msgid "not active"
+msgstr ""
+
+#: includes/admin.php:107
+msgid "not set"
+msgstr ""
+
+#: includes/admin.php:99
+msgid "plain"
+msgstr ""
+
+#: includes/admin.php:242
+msgid "prices, medication facts, eligibility, safety, FAQs and variations."
+msgstr ""
+
+#: includes/admin.php:243
+msgid "private submissions from the contact and consultation forms."
+msgstr ""
+
+#: includes/admin.php:244
+msgid "under Treatments → Reviews. Only publish consented, verified feedback."
+msgstr ""
+
+#: includes/schema.php:279
+msgid "“All guides” link URL"
+msgstr ""
+
+#: includes/schema.php:278
+msgid "“All guides” link label"
+msgstr ""
+
+#: includes/schema.php:418
+msgid "“Back to homepage” label"
+msgstr ""
+
+#: includes/admin.php:101
+msgid "“Post name” permalinks are recommended for treatments and pages."
+msgstr ""
+
