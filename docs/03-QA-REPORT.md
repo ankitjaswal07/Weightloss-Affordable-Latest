@@ -24,7 +24,7 @@ Every test below was executed against that installation, not against a mock.
 
 | Check | Method | Result |
 | --- | --- | --- |
-| PHP syntax, all 40 files | `php -l` equivalent for every file in `src/` | **40 files, 0 errors** |
+| PHP syntax, all 40 files | full parse of every file in `src/` (`token_get_all` with `TOKEN_PARSE`, plus an include pass), re-run over every file changed after the first pass | **40 files, 0 errors** |
 | JavaScript syntax | `node --check` on theme and admin scripts | pass |
 | CSS | loaded and parsed by the browser engine during crawl; no 404s in the rendered HTML | pass |
 | Translation templates | `.pot` generated for both packages (96 + 381 strings) | pass |
@@ -58,7 +58,7 @@ missing URL.
 
 | Check | Result |
 | --- | --- |
-| HTTP status | 24 × **200**, missing URL **404** |
+| HTTP status | 24 × **200**, missing URL **404** (home, treatment, articles, contact and 404 re-crawled after the final content fix: still 200/404, debug log empty) |
 | PHP warnings / notices / deprecations in output | **none** |
 | `wp-content/debug.log` after the whole crawl | **empty** |
 | Every page ends with `</html>` (no truncated output) | pass |
