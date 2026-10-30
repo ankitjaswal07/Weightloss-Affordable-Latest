@@ -1,0 +1,28 @@
+/* WeightLossAffordable general inquiry form. */
+.wla-contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
+.wla-form-label { display: flex; flex-direction: column; gap: 8px; color: #4e6257; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.wla-form-label:nth-of-type(3) { grid-column: 1 / -1; }
+.wla-form-label input, .wla-form-label select {
+  width: 100%; height: 54px; padding: 0 16px;
+  border: 1px solid rgba(23,61,54,.16); border-radius: 16px; background: #fff; color: #1c2b27;
+  font-size: 14px; letter-spacing: 0; text-transform: none;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+.wla-form-label input:hover, .wla-form-label select:hover { border-color: rgba(23,61,54,.3); }
+.wla-form-label input:focus, .wla-form-label select:focus { border-color: #647f67; box-shadow: 0 0 0 4px rgba(100,127,103,.14); outline: none; }
+.wla-form-consent { grid-column: 1 / -1; display: flex; align-items: flex-start; gap: 11px; color: #68766e; font-size: 12px; line-height: 1.65; }
+.wla-form-consent input { width: 17px; height: 17px; flex: none; margin: 2px 0 0; accent-color: #102f2a; }
+.wla-form-note { grid-column: 1 / -1; margin: 0; color: #78847d; font-size: 11px; line-height: 1.7; }
+.wla-contact-form > .wla-button {
+  grid-column: 1 / -1; justify-self: stretch; min-height: 56px; border: 0; border-radius: 999px;
+  background: linear-gradient(135deg, #173d36, #08201c); color: #fff; cursor: pointer;
+  font-size: 13px; font-weight: 800; box-shadow: 0 16px 34px rgba(16,47,42,.2);
+}
+.wla-form-honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+.wla-form-status { padding: 13px 15px; border-radius: 14px; font-size: 13px; line-height: 1.65; }
+.wla-form-success { background: #e7f1e3; color: #2f5a37; }
+.wla-form-error { background: #fff0e9; color: #963d2c; }
+@media (max-width: 520px) {
+  .wla-contact-form { grid-template-columns: 1fr; }
+  .wla-form-label:nth-of-type(3), .wla-form-consent, .wla-form-note, .wla-contact-form > .wla-button { grid-column: 1; }
+}

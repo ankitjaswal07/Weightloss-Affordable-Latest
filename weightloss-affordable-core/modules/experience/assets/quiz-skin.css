@@ -1,0 +1,7 @@
+/* WeightLossAffordable design tokens for the original NuestraRx quiz renderer. */
+.nrx-quiz{--nrx-paper:#fffcf6;--nrx-line:rgba(23,61,54,.13);--nrx-radius-lg:28px;--nrx-forest-ink:#102f2a;--nrx-forest:#173d36;--nrx-sage:#647f67;--nrx-clay:#d19a67;--nrx-clay-dark:#b87d4d;--nrx-text:#35443f;--nrx-muted:#6d7a72;--nrx-ink:#1c2b27;--nrx-serif:var(--serif,"Fraunces",Georgia,serif);--nrx-sans:var(--sans,"Manrope",Arial,sans-serif);font-family:var(--nrx-sans);border-radius:28px;box-shadow:0 16px 42px rgba(16,47,42,.08)}
+.nrx-quiz .nrx-quiz-title,.nrx-quiz .nrx-step-title,.nrx-quiz .nrx-result-title{font-family:var(--nrx-serif);color:#08201c}
+.nrx-quiz .nrx-choice,.nrx-quiz .nrx-bmi-card,.nrx-quiz .nrx-result{border-radius:18px}
+.nrx-quiz .nrx-choice:focus-within{outline:3px solid #d19a67;outline-offset:3px}
+.nrx-quiz .nrx-quiz-next,.nrx-quiz .nrx-result-actions a,.nrx-quiz .nrx-result-next{border-radius:999px}
+@media(max-width:560px){.nrx-quiz{padding:20px;border-radius:22px}.nrx-quiz .nrx-quiz-title{font-size:clamp(1.65rem,8vw,2.2rem)}}

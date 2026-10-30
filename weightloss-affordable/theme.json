@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": { "contentSize": "760px", "wideSize": "1340px" },
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        { "slug": "forest", "name": "Forest", "color": "#173d36" },
+        { "slug": "forest-deep", "name": "Deep forest", "color": "#08201c" },
+        { "slug": "sage", "name": "Sage", "color": "#647f67" },
+        { "slug": "pale-sage", "name": "Pale sage", "color": "#e9f0e4" },
+        { "slug": "warm-white", "name": "Warm ivory", "color": "#f8f5ee" },
+        { "slug": "clay", "name": "Warm gold", "color": "#d19a67" },
+        { "slug": "ink", "name": "Text", "color": "#1c2b27" }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        { "fontFamily": "Georgia, 'Times New Roman', serif", "slug": "editorial", "name": "Editorial serif" },
+        { "fontFamily": "Arial, Helvetica, sans-serif", "slug": "clean-sans", "name": "Clean sans" }
+      ],
+      "fontSizes": [
+        { "slug": "small", "size": "0.875rem", "name": "Small" },
+        { "slug": "medium", "size": "1rem", "name": "Medium" },
+        { "slug": "large", "size": "1.5rem", "name": "Large" },
+        { "slug": "x-large", "size": "clamp(2.65rem, 5vw, 4.55rem)", "name": "Display" },
+        { "slug": "hero", "size": "clamp(4rem, 7vw, 7rem)", "name": "Hero" }
+      ]
+    },
+    "spacing": { "spacingSizes": [
+      { "slug": "small", "size": "0.75rem", "name": "Small" },
+      { "slug": "medium", "size": "1.5rem", "name": "Medium" },
+      { "slug": "large", "size": "3rem", "name": "Large" },
+      { "slug": "x-large", "size": "5rem", "name": "Extra large" }
+    ] },
+    "blocks": { "core/button": { "border": { "radius": true } } }
+  },
+  "styles": {
+    "color": { "background": "#f8f5ee", "text": "#35443f" },
+    "typography": { "fontFamily": "var(--wp--preset--font-family--clean-sans)", "lineHeight": "1.7" },
+    "elements": {
+      "h1": { "typography": { "fontFamily": "var(--wp--preset--font-family--editorial)", "fontWeight": "400", "lineHeight": "0.95", "letterSpacing": "-0.035em" } },
+      "h2": { "typography": { "fontFamily": "var(--wp--preset--font-family--editorial)", "fontWeight": "400", "lineHeight": "1.02", "letterSpacing": "-0.03em" } },
+      "button": { "color": { "background": "#102f2a", "text": "#ffffff" }, "border": { "radius": "999px" } }
+    }
+  }
+}
