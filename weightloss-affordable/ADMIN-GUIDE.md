@@ -7,13 +7,14 @@ All imported pages use Elementor. Open a page → **Edit with Elementor**.
 Reusable widgets:
 
 - Straw Luxury homepage sections (`wla_hero_pro`, steps, FAQ, contact, CTA)
+- Clinical homepage sections: Protected Start, GLP-1 Signal, Two Treatments, Transformations, Video Stories, GLP-1 Science
 - **Experience Section** widget: Treatment Plans, Treatment Detail, Get a Quote (embed quiz), calculators
 
 ## Treatments
 
 **Treatments** in wp-admin is the product source of truth.
 
-Each record has bilingual fields. With English as the default language, the `_en` values are shown on the frontend.
+The admin editor is English-only. The public site still offers EN / ES through the live translator. English `_en` values are what visitors see by default.
 
 Editable groups include:
 

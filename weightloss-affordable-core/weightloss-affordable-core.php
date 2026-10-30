@@ -3,7 +3,7 @@
  * Plugin Name: WeightLossAffordable Core
  * Plugin URI: https://weightlossaffordable.com/
  * Description: 100% Preview-Identical Free Elementor Widgets, Live Single-Page EN/ES Translator Engine, Custom Post Types, AJAX General Inquiry Form, and One-Click Single-Site Importer for WeightLossAffordable.com.
- * Version: 2.1.0
+ * Version: 2.2.0
  * Requires at least: 6.6
  * Requires PHP: 7.4
  * Author: WeightLossAffordable
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'WLA_CORE_VERSION', '2.1.0' );
+define( 'WLA_CORE_VERSION', '2.2.0' );
 define( 'WLA_CORE_FILE', __FILE__ );
 define( 'WLA_CORE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'WLA_CORE_URL', plugin_dir_url( __FILE__ ) );

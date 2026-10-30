@@ -1,0 +1,327 @@
+/* WeightLossAffordable v2.2 — homepage clinical sections */
+
+.wla-clinical-section {
+	position: relative;
+	padding: 88px 0;
+	background: var(--paper);
+}
+
+.wla-clinical-heading {
+	max-width: 760px;
+	margin: 0 0 42px;
+}
+
+.wla-clinical-heading h2,
+.wla-guarantee-copy h2,
+.wla-signal h2 {
+	font-family: Fraunces, Georgia, serif;
+	font-weight: 500;
+	font-size: clamp(2rem, 4vw, 3.4rem);
+	line-height: 1.12;
+	color: var(--forest-950);
+	margin: 10px 0 16px;
+}
+
+.wla-clinical-heading h2 em,
+.wla-guarantee-copy h2 em,
+.wla-signal h2 em {
+	font-style: italic;
+	color: var(--gold-dark);
+}
+
+.wla-clinical-heading p,
+.wla-guarantee-copy > p,
+.wla-signal p {
+	color: var(--text);
+	font-size: 1.05rem;
+	line-height: 1.7;
+}
+
+.wla-clinical-note {
+	margin-top: 22px;
+	color: var(--muted);
+	font-size: 0.92rem;
+	max-width: 820px;
+}
+
+.wla-clinical-cta {
+	margin-top: 28px;
+}
+
+.wla-guarantee {
+	background: linear-gradient(180deg, #f4efe4 0%, var(--paper) 70%);
+}
+
+.wla-guarantee-grid {
+	display: grid;
+	grid-template-columns: 1.4fr 0.8fr;
+	gap: 48px;
+	align-items: center;
+}
+
+.wla-guarantee-points {
+	list-style: none;
+	margin: 28px 0;
+	padding: 0;
+}
+
+.wla-guarantee-points li {
+	display: flex;
+	gap: 12px;
+	align-items: flex-start;
+	margin-bottom: 12px;
+	color: var(--ink);
+}
+
+.wla-guarantee-points svg {
+	width: 20px;
+	height: 20px;
+	flex: 0 0 20px;
+	color: var(--forest-700);
+	margin-top: 2px;
+}
+
+.wla-guarantee-card {
+	background: var(--forest-900);
+	color: var(--ivory);
+	border-radius: 28px;
+	padding: 42px 36px;
+	min-height: 280px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	box-shadow: var(--shadow-soft);
+}
+
+.wla-guarantee-kicker {
+	letter-spacing: 0.16em;
+	font-size: 0.72rem;
+	opacity: 0.7;
+}
+
+.wla-guarantee-card strong {
+	font-family: Fraunces, Georgia, serif;
+	font-size: clamp(4rem, 8vw, 7rem);
+	line-height: 0.9;
+	display: block;
+	margin: 12px 0 8px;
+}
+
+.wla-signal {
+	background: var(--ivory);
+}
+
+.wla-signal-grid {
+	display: grid;
+	grid-template-columns: 1.1fr 0.9fr;
+	gap: 48px;
+	align-items: center;
+}
+
+.wla-signal-points {
+	list-style: none;
+	margin: 28px 0;
+	padding: 0;
+}
+
+.wla-signal-points li {
+	display: grid;
+	grid-template-columns: 48px 1fr;
+	gap: 16px;
+	margin-bottom: 18px;
+}
+
+.wla-signal-points li > span {
+	font-family: Fraunces, Georgia, serif;
+	color: var(--gold-dark);
+	font-size: 1.2rem;
+}
+
+.wla-signal-media img {
+	width: 100%;
+	height: 100%;
+	max-height: 520px;
+	object-fit: cover;
+	border-radius: 28px;
+}
+
+.wla-treatments-duo {
+	background: #f3eee3;
+}
+
+.wla-duo-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+}
+
+.wla-duo-card {
+	background: var(--paper);
+	border-radius: 28px;
+	padding: 32px;
+	box-shadow: var(--shadow-card);
+}
+
+.wla-duo-card h3 {
+	font-family: Fraunces, Georgia, serif;
+	font-size: 2rem;
+	margin: 8px 0 12px;
+}
+
+.wla-duo-price {
+	font-family: Fraunces, Georgia, serif;
+	font-size: 1.8rem;
+	margin: 16px 0;
+}
+
+.wla-duo-price small {
+	display: block;
+	font-family: Manrope, sans-serif;
+	font-size: 0.78rem;
+	color: var(--muted);
+	margin-top: 4px;
+}
+
+.wla-duo-card ul {
+	margin: 0 0 22px;
+	padding-left: 18px;
+	color: var(--text);
+}
+
+.wla-duo-actions {
+	display: flex;
+	gap: 18px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.wla-text-link {
+	color: var(--forest-800);
+	font-weight: 700;
+	text-decoration: none;
+	border-bottom: 1px solid var(--gold);
+}
+
+.wla-transformations {
+	background: var(--paper);
+}
+
+.wla-transform-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 22px;
+}
+
+.wla-transform-card {
+	background: #fff;
+	border-radius: 24px;
+	overflow: hidden;
+	box-shadow: var(--shadow-card);
+}
+
+.wla-ba {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	min-height: 160px;
+	background: linear-gradient(90deg, #d9cbb3 0 50%, #efe7d8 50% 100%);
+	color: var(--forest-900);
+	font-size: 0.72rem;
+	letter-spacing: 0.14em;
+}
+
+.wla-ba span {
+	display: flex;
+	align-items: flex-end;
+	padding: 14px;
+}
+
+.wla-transform-copy {
+	padding: 22px;
+}
+
+.wla-transform-meta {
+	font-size: 0.82rem;
+	color: var(--muted);
+	margin: 6px 0 10px;
+}
+
+.wla-videos {
+	background: var(--forest-950);
+	color: var(--ivory);
+}
+
+.wla-videos .wla-clinical-heading h2,
+.wla-videos .wla-clinical-heading p,
+.wla-videos h3 {
+	color: var(--ivory);
+}
+
+.wla-video-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 22px;
+}
+
+.wla-video-frame {
+	aspect-ratio: 16 / 10;
+	background: #12332d;
+	border-radius: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 14px;
+	overflow: hidden;
+}
+
+.wla-video-frame video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.wla-science {
+	background: var(--ivory);
+}
+
+.wla-science-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+}
+
+.wla-science-grid article {
+	background: #fff;
+	border-radius: 24px;
+	padding: 28px;
+	box-shadow: var(--shadow-card);
+}
+
+.wla-science-grid h3 {
+	font-family: Fraunces, Georgia, serif;
+	font-size: 1.8rem;
+	margin: 8px 0 14px;
+}
+
+.nrx-quiz-context {
+	margin: 0 0 18px;
+	padding: 12px 16px;
+	border-radius: 14px;
+	background: var(--sage-100);
+	color: var(--forest-900);
+	font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+	.wla-guarantee-grid,
+	.wla-signal-grid,
+	.wla-duo-grid,
+	.wla-transform-grid,
+	.wla-video-grid,
+	.wla-science-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.wla-clinical-section {
+		padding: 64px 0;
+	}
+}

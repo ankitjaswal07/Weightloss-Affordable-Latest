@@ -30,6 +30,12 @@ function wla_enqueue_assets() {
 		array( 'weightloss-affordable-style' ),
 		WLA_THEME_VERSION
 	);
+	wp_enqueue_style(
+		'weightloss-affordable-clinical',
+		WLA_THEME_URI . '/assets/css/home-clinical.css',
+		array( 'weightloss-affordable-main' ),
+		WLA_THEME_VERSION
+	);
 
 	wp_enqueue_script(
 		'weightloss-affordable-translations',

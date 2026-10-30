@@ -202,7 +202,14 @@ function wla_experience_render_treatment_detail( $atts ) {
 			if ( ! empty( $plan['note'] ) ) {
 				$out .= '<p class="wla-exp-disclaimer">' . esc_html( $plan['note'] ) . '</p>';
 			}
-			$out .= '<a class="wla-exp-text-link" href="' . esc_url( $quote ) . '">' . esc_html__( 'Ask about this plan', 'wla-experience' ) . '</a>';
+			$plan_url = add_query_arg(
+				array(
+					'treatment' => $post->post_name,
+					'plan'      => sanitize_title( $plan['name'] ?? 'plan' ),
+				),
+				$quote
+			);
+			$out .= '<a class="button button-primary" href="' . esc_url( $plan_url ) . '">' . esc_html__( 'Choose this package', 'wla-experience' ) . '</a>';
 			$out .= '</article>';
 		}
 		$out .= '</div></section>';

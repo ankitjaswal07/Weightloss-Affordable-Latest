@@ -292,9 +292,9 @@ function wla_run_demo_import() {
 			'line2_suffix'   => trim( $h['heroAfterEmphasis'] ?? 'way' ),
 			'line3'          => $h['heroLines'][2] ?? 'to begin.',
 			'body'           => $h['heroBody'] ?? '',
-			'primary_text'   => $h['heroPrimary'] ?? '',
+			'primary_text'   => $h['heroPrimary'] ?? 'Get a quote',
 			'primary_url'    => '/consultation-eligibility/',
-			'secondary_text' => $h['heroSecondary'] ?? '',
+			'secondary_text' => $h['heroSecondary'] ?? 'How it works',
 			'secondary_url'  => '#process',
 			'image'          => $hero_media,
 			'float_badge'    => $h['imageBadge'] ?? '',
@@ -316,15 +316,23 @@ function wla_run_demo_import() {
 			'intro'   => $h['servicesIntro'] ?? '',
 			'cards'   => $home_cards,
 		) ),
+		wla_el_section_widget( 'wla_treatments_duo', array() ),
+		wla_el_section_widget( 'wla_guarantee', array() ),
+		wla_el_section_widget( 'wla_glp1_signal', array(
+			'image' => $asset_map['nutrition.jpg'] ?? array( 'id' => 0, 'url' => '' ),
+		) ),
 		wla_el_section_widget( 'wla_steps', array(
 			'index'    => '03',
 			'eyebrow'  => $h['processEyebrow'] ?? '',
 			'title'    => $h['processTitle'] ?? '',
 			'intro'    => $h['processIntro'] ?? '',
 			'steps'    => $home_steps,
-			'cta_text' => $h['processCta'] ?? 'Start with a question',
+			'cta_text' => $h['processCta'] ?? 'Get a quote',
 			'cta_url'  => '/consultation-eligibility/',
 		) ),
+		wla_el_section_widget( 'wla_science', array() ),
+		wla_el_section_widget( 'wla_transformations', array() ),
+		wla_el_section_widget( 'wla_video_stories', array() ),
 		wla_el_section_widget( 'wla_approach_split', array(
 			'eyebrow'     => $h['approachEyebrow'] ?? '',
 			'title'       => $h['approachTitle'] ?? '',
@@ -367,8 +375,8 @@ function wla_run_demo_import() {
 			'eyebrow'     => $h['ctaBandEyebrow'] ?? 'NEXT STEP',
 			'title'       => $h['ctaBandTitle'] ?? '',
 			'body'        => $h['ctaBandBody'] ?? '',
-			'button_text' => $h['ctaBandButton'] ?? 'Open the Contact page',
-			'button_url'  => '/contact',
+			'button_text' => $h['ctaBandButton'] ?? 'Get a quote',
+			'button_url'  => '/consultation-eligibility/',
 		) ),
 		wla_el_section_widget( 'wla_page_nav', array( 'current_slug' => 'home' ) ),
 	);
@@ -475,6 +483,9 @@ function wla_run_demo_import() {
 			) );
 		}
 		$sp_el[] = wla_el_section_widget( 'wla_page_nav', array( 'current_slug' => $slug ) );
+		if ( function_exists( 'wla_el_enrich_sections' ) ) {
+			$sp_el = wla_el_enrich_sections( $sp_el );
+		}
 
 		$pid = wla_upsert_single_post( 'page', $slug, sanitize_text_field( $sp['title'] ?? $slug ), wp_kses_post( wpautop( $sp['lead'] ?? '' ) ), 'publish', 'single-page-' . $slug );
 		if ( $pid ) {
@@ -547,8 +558,8 @@ function wla_run_demo_import() {
 	update_option( 'elementor_cpt_support', array( 'page', 'post', 'wla_service', 'wla_treatment', 'wla_package', 'wla_review', 'wla_team' ) );
 
 	$menus_to_build = array(
-		'primary' => array( 'home', 'about', 'weight-loss-services', 'treatment-information', 'how-it-works', 'pricing-and-packages', 'resources', 'frequently-asked-questions', 'contact' ),
-		'footer'  => array( 'about', 'weight-loss-services', 'treatment-information', 'how-it-works', 'pricing-and-packages', 'resources', 'consultation-eligibility', 'privacy-policy', 'terms-and-conditions', 'medical-disclaimer' ),
+		'primary' => array( 'home', 'about', 'weight-loss-services', 'how-it-works', 'consultation-eligibility', 'frequently-asked-questions', 'contact' ),
+		'footer'  => array( 'about', 'weight-loss-services', 'how-it-works', 'consultation-eligibility', 'weekly-payment', 'how-glp1-works', 'privacy-policy', 'terms-and-conditions', 'medical-disclaimer' ),
 	);
 	$locations = get_theme_mod( 'nav_menu_locations', array() );
 	foreach ( $menus_to_build as $loc => $slugs ) {

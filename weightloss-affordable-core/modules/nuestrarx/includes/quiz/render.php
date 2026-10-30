@@ -162,14 +162,14 @@ function nrx_quiz_render( $args = array() ) {
 					<span data-nrx-phase><?php echo esc_html( $steps[0]['phase'] ?? '' ); ?></span>
 					<span data-nrx-progress-count aria-live="polite"></span>
 				</div>
-				<div class="nrx-quiz-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="<?php esc_attr_e( 'Progreso de la evaluación', 'nuestrarx-core' ); ?>" data-nrx-progressbar>
+					<div class="nrx-quiz-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="<?php esc_attr_e( 'Quiz progress', 'nuestrarx-core' ); ?>" data-nrx-progressbar>
 					<span class="nrx-quiz-progress-bar" data-nrx-progressbar-fill></span>
 				</div>
 			</div>
 
 			<noscript>
 				<div class="nrx-quiz-noscript">
-					<p><?php esc_html_e( 'Esta evaluación necesita JavaScript. También puedes escribirnos por WhatsApp y te ayudamos a completarla.', 'nuestrarx-core' ); ?></p>
+						<p><?php esc_html_e( 'This quiz needs JavaScript. You can also contact the clinic to complete it with help.', 'nuestrarx-core' ); ?></p>
 					<?php if ( nrx_whatsapp_url() ) : ?>
 						<a class="button button-primary" href="<?php echo esc_url( nrx_whatsapp_url( 'Hola, quiero completar mi evaluación' ) ); ?>">WhatsApp</a>
 					<?php endif; ?>
@@ -177,6 +177,28 @@ function nrx_quiz_render( $args = array() ) {
 			</noscript>
 
 			<form class="nrx-quiz-form" novalidate data-nrx-quiz-form>
+				<?php
+				$selected_treatment = isset( $_GET['treatment'] ) ? sanitize_title( wp_unslash( $_GET['treatment'] ) ) : '';
+				$selected_plan      = isset( $_GET['plan'] ) ? sanitize_title( wp_unslash( $_GET['plan'] ) ) : '';
+				if ( $selected_treatment || $selected_plan ) :
+					?>
+					<p class="nrx-quiz-context">
+						<?php
+						echo esc_html(
+							trim(
+								sprintf(
+									/* translators: 1: treatment slug, 2: plan slug */
+									__( 'Continuing from %1$s%2$s. Complete your details to submit this quote request.', 'nuestrarx-core' ),
+									$selected_treatment ? $selected_treatment : __( 'your selected treatment', 'nuestrarx-core' ),
+									$selected_plan ? ' · ' . $selected_plan : ''
+								)
+							)
+						);
+						?>
+					</p>
+					<input type="hidden" name="selected_treatment" value="<?php echo esc_attr( $selected_treatment ); ?>" data-nrx-selected-treatment>
+					<input type="hidden" name="selected_plan" value="<?php echo esc_attr( $selected_plan ); ?>" data-nrx-selected-plan>
+				<?php endif; ?>
 				<?php
 				$step_index = 0;
 				foreach ( $steps as $step ) :
@@ -188,18 +210,18 @@ function nrx_quiz_render( $args = array() ) {
 				<div class="nrx-quiz-step-error" role="alert" data-nrx-error hidden></div>
 				<div class="nrx-quiz-actions" data-nrx-actions>
 					<button type="button" class="nrx-quiz-back" data-nrx-back hidden>
-						<?php echo nrx_icon( 'arrow', 16 ); ?><span><?php esc_html_e( 'Volver', 'nuestrarx-core' ); ?></span>
+						<?php echo nrx_icon( 'arrow', 16 ); ?><span><?php esc_html_e( 'Back', 'nuestrarx-core' ); ?></span>
 					</button>
 					<div class="nrx-quiz-actions-end">
 						<button type="button" class="button button-primary nrx-quiz-next" data-nrx-next>
-							<span data-nrx-next-label><?php echo esc_html( $steps[0]['type'] ?? '' ) === 'consent' ? esc_html__( 'Enviar mi evaluación', 'nuestrarx-core' ) : esc_html__( 'Continuar', 'nuestrarx-core' ); ?></span>
+							<span data-nrx-next-label><?php echo esc_html( $steps[0]['type'] ?? '' ) === 'consent' ? esc_html__( 'Submit my enquiry', 'nuestrarx-core' ) : esc_html__( 'Continue', 'nuestrarx-core' ); ?></span>
 							<span class="button-arrow"><?php echo nrx_icon( 'arrow', 18 ); ?></span>
 						</button>
 					</div>
 				</div>
 				<p class="nrx-quiz-footnote">
 					<?php echo nrx_icon( 'lock', 14 ); ?>
-					<span><?php esc_html_e( 'Tus respuestas se envían de forma segura y solo las revisa el equipo clínico. No usamos tus respuestas para publicidad.', 'nuestrarx-core' ); ?></span>
+					<span><?php esc_html_e( 'Your answers are sent securely and reviewed only by the clinical team. They are not used for advertising.', 'nuestrarx-core' ); ?></span>
 				</p>
 			</form>
 		</div>

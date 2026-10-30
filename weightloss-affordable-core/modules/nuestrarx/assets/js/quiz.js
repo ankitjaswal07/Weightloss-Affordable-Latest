@@ -569,7 +569,13 @@
 		var payload = new FormData();
 		payload.append( 'action', 'nrx_quiz_submit' );
 		payload.append( 'nonce', config.nonce || '' );
-		payload.append( 'answers', JSON.stringify( readAnswers() ) );
+		var answers = readAnswers();
+		var treatmentInput = document.querySelector( '[data-nrx-selected-treatment]' );
+		var planInput = document.querySelector( '[data-nrx-selected-plan]' );
+		var params = new URLSearchParams( window.location.search );
+		answers.selected_treatment = ( treatmentInput && treatmentInput.value ) || params.get( 'treatment' ) || '';
+		answers.selected_plan = ( planInput && planInput.value ) || params.get( 'plan' ) || '';
+		payload.append( 'answers', JSON.stringify( answers ) );
 		payload.append( 'elapsed', String( elapsed + Math.round( wait / 1000 ) ) );
 		if ( declined ) {
 			payload.append( 'declined', '1' );

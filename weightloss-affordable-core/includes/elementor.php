@@ -22,6 +22,7 @@ function wla_elementor_register_widgets( $widgets_manager ) {
 		return;
 	}
 	require_once WLA_CORE_DIR . 'includes/widgets.php';
+	require_once WLA_CORE_DIR . 'includes/widgets-home.php';
 	$widgets_manager->register( new WLA_Hero_Pro_Widget() );
 	$widgets_manager->register( new WLA_Philosophy_Intro_Widget() );
 	$widgets_manager->register( new WLA_Service_Cards_Widget() );
@@ -35,5 +36,13 @@ function wla_elementor_register_widgets( $widgets_manager ) {
 	$widgets_manager->register( new WLA_Subpage_Hero_Widget() );
 	$widgets_manager->register( new WLA_Cta_Band_Widget() );
 	$widgets_manager->register( new WLA_Page_Nav_Widget() );
+	if ( class_exists( 'WLA_Guarantee_Widget' ) ) {
+		$widgets_manager->register( new WLA_Guarantee_Widget() );
+		$widgets_manager->register( new WLA_Glp1_Signal_Widget() );
+		$widgets_manager->register( new WLA_Treatments_Duo_Widget() );
+		$widgets_manager->register( new WLA_Transformations_Widget() );
+		$widgets_manager->register( new WLA_Video_Stories_Widget() );
+		$widgets_manager->register( new WLA_Science_Widget() );
+	}
 }
 add_action( 'elementor/widgets/register', 'wla_elementor_register_widgets' );

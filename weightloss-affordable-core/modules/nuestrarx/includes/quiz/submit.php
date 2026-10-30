@@ -125,6 +125,15 @@ function nrx_quiz_sanitize_answers( $config, $raw ) {
 		}
 	}
 
+	$treatment = sanitize_title( (string) ( $raw['selected_treatment'] ?? '' ) );
+	$plan      = sanitize_title( (string) ( $raw['selected_plan'] ?? '' ) );
+	if ( $treatment ) {
+		$clean['selected_treatment'] = $treatment;
+	}
+	if ( $plan ) {
+		$clean['selected_plan'] = $plan;
+	}
+
 	return $clean;
 }
 

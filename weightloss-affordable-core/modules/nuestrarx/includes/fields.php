@@ -36,13 +36,25 @@ function nrx_render_fields( $fields, $values, $name_prefix, $args = array() ) {
 		}
 		$key   = (string) $field['key'];
 		$value = array_key_exists( $key, $values ) ? $values[ $key ] : ( $field['default'] ?? '' );
+		if ( ! empty( $field['bilingual'] ) && function_exists( 'nrx_is_spanish' ) && ! nrx_is_spanish() ) {
+			$en_key   = $key . '_en';
+			$en_value = array_key_exists( $en_key, $values ) ? $values[ $en_key ] : ( $field['default_en'] ?? '' );
+			if ( '' === (string) $en_value ) {
+				$en_value = $value;
+			}
+			$en_field = $field;
+			$en_field['bilingual'] = false;
+			unset( $en_field['default'] );
+			nrx_render_field( $en_field, $en_value, $name_prefix . '[' . $en_key . ']' );
+			continue;
+		}
 		nrx_render_field( $field, $value, $name_prefix . '[' . $key . ']' );
 		if ( ! empty( $field['bilingual'] ) ) {
 			$en_key   = $key . '_en';
 			$en_value = array_key_exists( $en_key, $values ) ? $values[ $en_key ] : ( $field['default_en'] ?? '' );
 			$en_field = $field;
 			$en_field['label'] = ( $field['label'] ?? $key ) . ' — English';
-			$en_field['help']  = __( 'Se muestra cuando el visitante elige EN. Si se deja vacío se muestra el texto en español.', 'nuestrarx-core' );
+			$en_field['help']  = __( 'Shown when the visitor chooses EN. If empty, the primary text is used.', 'nuestrarx-core' );
 			$en_field['bilingual'] = false;
 			unset( $en_field['default'] );
 			nrx_render_field( $en_field, $en_value, $name_prefix . '[' . $en_key . ']' );

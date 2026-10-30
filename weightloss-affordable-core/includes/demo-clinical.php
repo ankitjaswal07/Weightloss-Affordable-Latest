@@ -7,27 +7,65 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+function wla_el_enrich_sections( $sections ) {
+	$body = array();
+	$tail = array();
+	$have = array();
+	foreach ( (array) $sections as $sec ) {
+		$type = $sec['elements'][0]['widgetType'] ?? '';
+		if ( in_array( $type, array( 'wla_cta_band', 'wla_page_nav', 'wla_contact_section' ), true ) ) {
+			$tail[] = $sec;
+		} else {
+			$body[] = $sec;
+			$have[] = $type;
+		}
+	}
+	$fillers = array( 'wla_treatments_duo', 'wla_guarantee', 'wla_science', 'wla_glp1_signal', 'wla_transformations', 'wla_video_stories' );
+	foreach ( $fillers as $widget ) {
+		if ( count( $body ) >= 6 ) {
+			break;
+		}
+		if ( ! in_array( $widget, $have, true ) ) {
+			$body[] = wla_el_section_widget( $widget );
+			$have[] = $widget;
+		}
+	}
+	return array_merge( $body, $tail );
+}
+
 function wla_clinical_el_quiz_page( $title, $lead, $badge ) {
-	return array(
-		wla_el_section_widget(
-			'wla_subpage_hero',
-			array(
-				'eyebrow' => 'GET A QUOTE',
-				'title'   => $title,
-				'lead'    => $lead,
-				'badge'   => $badge,
-			)
-		),
-		wla_el_section_widget(
-			'wla-experience-component',
-			array(
-				'module'     => 'get_quote',
-				'quote_mode' => 'quiz',
-				'title'      => __( 'Step-by-step enquiry', 'weightloss-affordable-core' ),
-				'intro'      => __( 'Answer each step. You can go back without losing your answers. Submitting is not a diagnosis or a guaranteed prescription.', 'weightloss-affordable-core' ),
-			)
-		),
-		wla_el_section_widget( 'wla_page_nav', array( 'current_slug' => 'consultation-eligibility' ) ),
+	return wla_el_enrich_sections(
+		array(
+			wla_el_section_widget(
+				'wla_subpage_hero',
+				array(
+					'eyebrow' => 'GET A QUOTE',
+					'title'   => $title,
+					'lead'    => $lead,
+					'badge'   => $badge,
+				)
+			),
+			wla_el_section_widget(
+				'wla-experience-component',
+				array(
+					'module'     => 'get_quote',
+					'quote_mode' => 'quiz',
+					'title'      => __( 'Step-by-step enquiry', 'weightloss-affordable-core' ),
+					'intro'      => __( 'Answer each step. You can go back without losing your answers. Submitting is not a diagnosis or a guaranteed prescription.', 'weightloss-affordable-core' ),
+				)
+			),
+			wla_el_section_widget(
+				'wla_cta_band',
+				array(
+					'eyebrow'     => 'TREATMENTS',
+					'title'       => 'Prefer to read first?',
+					'body'        => 'Open a treatment page, choose a package, then return to Get Quote with that selection.',
+					'button_text' => 'View treatments',
+					'button_url'  => '/weight-loss-services/',
+				)
+			),
+			wla_el_section_widget( 'wla_page_nav', array( 'current_slug' => 'consultation-eligibility' ) ),
+		)
 	);
 }
 
@@ -96,14 +134,38 @@ function wla_import_clinical_site( &$report, $page_ids = array() ) {
 				wp_update_post( array( 'ID' => $id, 'post_status' => 'publish' ) );
 				wla_clinical_assign_elementor(
 					$id,
-					array(
-						wla_el_section_widget(
-							'wla-experience-component',
-							array(
-								'module'         => 'treatment_detail',
-								'treatment_slug' => $slug,
-							)
-						),
+					wla_el_enrich_sections(
+						array(
+							wla_el_section_widget(
+								'wla_subpage_hero',
+								array(
+									'eyebrow' => 'TREATMENT',
+									'title'   => $record['title'],
+									'lead'    => wp_strip_all_tags( $record['fields']['tagline_en'] ?? $record['fields']['tagline'] ?? '' ),
+									'badge'   => 'Choose a package, then Get Quote',
+								)
+							),
+							wla_el_section_widget(
+								'wla-experience-component',
+								array(
+									'module'         => 'treatment_detail',
+									'treatment_slug' => $slug,
+								)
+							),
+							wla_el_section_widget( 'wla_guarantee', array() ),
+							wla_el_section_widget( 'wla_science', array() ),
+							wla_el_section_widget(
+								'wla_cta_band',
+								array(
+									'eyebrow'     => 'NEXT STEP',
+									'title'       => 'Ready to request a quote?',
+									'body'        => 'Choosing a package sends you to Get Quote with that treatment selected. Completing the quiz is not a diagnosis.',
+									'button_text' => 'Get a quote',
+									'button_url'  => '/consultation-eligibility/?treatment=' . rawurlencode( $slug ),
+								)
+							),
+							wla_el_section_widget( 'wla_page_nav', array( 'current_slug' => $slug ) ),
+						)
 					)
 				);
 				update_post_meta( $id, '_wla_seo_title', $record['title'] . ' | WeightLossAffordable' );
@@ -152,27 +214,29 @@ function wla_import_clinical_site( &$report, $page_ids = array() ) {
 				update_post_meta( $pid, '_wp_page_template', 'page-templates/intake.php' );
 				wla_clinical_assign_elementor( $pid, wla_clinical_el_quiz_page( $meta['title'], $meta['lead'], 'Published step-by-step quiz' ) );
 			} else {
-				$el = array(
-					wla_el_section_widget(
-						'wla_subpage_hero',
-						array(
-							'eyebrow' => strtoupper( $meta['title'] ),
-							'title'   => $meta['title'],
-							'lead'    => $meta['lead'],
-							'badge'   => 'Educational page · English',
-						)
-					),
-					wla_el_section_widget(
-						'wla_cta_band',
-						array(
-							'eyebrow'     => 'NEXT STEP',
-							'title'       => 'Ready to ask about eligibility?',
-							'body'        => 'Open the Get Quote quiz. Completing it is not a diagnosis or a guaranteed prescription.',
-							'button_text' => 'Get a quote',
-							'button_url'  => '/consultation-eligibility/',
-						)
-					),
-					wla_el_section_widget( 'wla_page_nav', array( 'current_slug' => $slug ) ),
+				$el = wla_el_enrich_sections(
+					array(
+						wla_el_section_widget(
+							'wla_subpage_hero',
+							array(
+								'eyebrow' => strtoupper( $meta['title'] ),
+								'title'   => $meta['title'],
+								'lead'    => $meta['lead'],
+								'badge'   => 'Educational page · English',
+							)
+						),
+						wla_el_section_widget(
+							'wla_cta_band',
+							array(
+								'eyebrow'     => 'NEXT STEP',
+								'title'       => 'Ready to ask about eligibility?',
+								'body'        => 'Open the Get Quote quiz. Completing it is not a diagnosis or a guaranteed prescription.',
+								'button_text' => 'Get a quote',
+								'button_url'  => '/consultation-eligibility/',
+							)
+						),
+						wla_el_section_widget( 'wla_page_nav', array( 'current_slug' => $slug ) ),
+					)
 				);
 				wla_clinical_assign_elementor( $pid, $el );
 			}
@@ -196,26 +260,40 @@ function wla_import_clinical_site( &$report, $page_ids = array() ) {
 	}
 
 	if ( ! empty( $page_ids['weight-loss-services'] ) ) {
-		$services_el = array(
-			wla_el_section_widget(
-				'wla_subpage_hero',
-				array(
-					'eyebrow' => 'TREATMENTS',
-					'title'   => 'Treatment options you can review in detail.',
-					'lead'    => 'Each published treatment has its own page, unique educational copy, and a Get Quote call to action.',
-					'badge'   => 'Published treatment catalog',
-				)
-			),
-			wla_el_section_widget(
-				'wla-experience-component',
-				array(
-					'module' => 'treatment_plans',
-					'title'  => 'Published treatments',
-					'intro'  => 'Open a treatment to read the overview, suitability, process, safety notes, FAQs and enquiry quiz.',
-					'limit'  => 8,
-				)
-			),
-			wla_el_section_widget( 'wla_page_nav', array( 'current_slug' => 'weight-loss-services' ) ),
+		$services_el = wla_el_enrich_sections(
+			array(
+				wla_el_section_widget(
+					'wla_subpage_hero',
+					array(
+						'eyebrow' => 'TREATMENTS',
+						'title'   => 'Treatment options you can review in detail.',
+						'lead'    => 'Each published treatment has its own page, unique educational copy, and a Get Quote call to action.',
+						'badge'   => 'Published treatment catalog',
+					)
+				),
+				wla_el_section_widget(
+					'wla-experience-component',
+					array(
+						'module' => 'treatment_plans',
+						'title'  => 'Published treatments',
+						'intro'  => 'Open a treatment to read the overview, choose a package, then submit Get Quote.',
+						'limit'  => 8,
+					)
+				),
+				wla_el_section_widget( 'wla_treatments_duo', array() ),
+				wla_el_section_widget( 'wla_science', array() ),
+				wla_el_section_widget(
+					'wla_cta_band',
+					array(
+						'eyebrow'     => 'NEXT STEP',
+						'title'       => 'Choose a treatment, then a package.',
+						'body'        => 'Package buttons open Get Quote with that treatment selected.',
+						'button_text' => 'Get a quote',
+						'button_url'  => '/consultation-eligibility/',
+					)
+				),
+				wla_el_section_widget( 'wla_page_nav', array( 'current_slug' => 'weight-loss-services' ) ),
+			)
 		);
 		wla_clinical_assign_elementor( $page_ids['weight-loss-services'], $services_el );
 	}
@@ -244,7 +322,7 @@ function wla_import_clinical_site( &$report, $page_ids = array() ) {
 
 	$locations = get_theme_mod( 'nav_menu_locations', array() );
 	$menus     = array(
-		'primary' => array( 'home', 'about', 'weight-loss-services', 'how-it-works', 'consultation-eligibility', 'resources', 'frequently-asked-questions', 'contact' ),
+		'primary' => array( 'home', 'about', 'weight-loss-services', 'how-it-works', 'consultation-eligibility', 'frequently-asked-questions', 'contact' ),
 		'footer'  => array( 'about', 'weight-loss-services', 'get-quote', 'weekly-payment', 'how-glp1-works', 'privacy-policy', 'terms-and-conditions', 'medical-disclaimer', 'treatment-safety-information', 'refund-cancellation-policy' ),
 	);
 	foreach ( $menus as $loc => $slugs ) {

@@ -111,6 +111,12 @@ function nrx_store_intake( $config, $answers, $outcome, $flags ) {
 	update_post_meta( $post_id, '_nrx_age_range', sanitize_text_field( (string) ( $answers['age'] ?? '' ) ) );
 	update_post_meta( $post_id, '_nrx_sex', sanitize_key( (string) ( $answers['sex'] ?? '' ) ) );
 	update_post_meta( $post_id, '_nrx_goal', sanitize_text_field( (string) ( $answers['goal'] ?? '' ) ) );
+	if ( ! empty( $answers['selected_treatment'] ) ) {
+		update_post_meta( $post_id, '_nrx_treatment', sanitize_title( (string) $answers['selected_treatment'] ) );
+	}
+	if ( ! empty( $answers['selected_plan'] ) ) {
+		update_post_meta( $post_id, '_nrx_plan', sanitize_title( (string) $answers['selected_plan'] ) );
+	}
 	update_post_meta( $post_id, '_nrx_config_version', (int) ( $config['version'] ?? 0 ) );
 	update_post_meta( $post_id, '_nrx_consent_version', sanitize_text_field( (string) ( $config['settings']['consent_version'] ?? '' ) ) );
 	update_post_meta( $post_id, '_nrx_consent_at', $now );

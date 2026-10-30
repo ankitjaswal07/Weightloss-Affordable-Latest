@@ -359,17 +359,17 @@ function wla_render_journey_section( $args = array() ) {
 		$args,
 		array(
 			'index'          => '03',
-			'window_left'    => $d['processWindowLeft'] ?? 'Your information journey',
+			'window_left'    => $d['processWindowLeft'] ?? 'How it works',
 			'window_right'   => $d['processWindowRight'] ?? '04 stages',
-			'eyebrow'        => $d['processEyebrow'] ?? 'A SIMPLE STARTING POINT',
+			'eyebrow'        => $d['processEyebrow'] ?? 'HOW IT WORKS',
 			'title'          => $d['processTitle'] ?? 'A clearer path, one step at a time.',
 			'intro'          => $d['processIntro'] ?? '',
-			'chips'          => $d['processChips'] ?? array( 'Four clear stages', 'Illustrative demo flow', 'No medical intake' ),
+			'chips'          => $d['processChips'] ?? array( 'About 5 minutes', 'Clinician review', 'No outcome promised' ),
 			'steps'          => $d['steps'] ?? array(),
 			'progress_label' => $d['processProgressLabel'] ?? 'Journey stage',
 			'footnote'       => $d['processFootnote'] ?? '',
-			'cta_text'       => $d['processCta'] ?? 'Start with a question',
-			'cta_url'        => '#contact',
+			'cta_text'       => $d['processCta'] ?? 'Get a quote',
+			'cta_url'        => '/consultation-eligibility/',
 		)
 	);
 	$step_icons = array( 'book', 'chat', 'shield', 'heart' );
@@ -1183,10 +1183,17 @@ function wla_render_subpage_hero( $args = array() ) {
 }
 
 function wla_render_full_homepage() {
+	$clinical = function_exists( 'wla_render_guarantee_section' );
 	return wla_render_hero_section()
 		. wla_render_intro_section()
 		. wla_render_services_section()
+		. ( $clinical ? wla_render_treatments_duo_section() : '' )
+		. ( $clinical ? wla_render_guarantee_section() : '' )
+		. ( $clinical ? wla_render_signal_section() : '' )
 		. wla_render_journey_section()
+		. ( $clinical ? wla_render_science_section() : '' )
+		. ( $clinical ? wla_render_transformations_section() : '' )
+		. ( $clinical ? wla_render_video_stories_section() : '' )
 		. wla_render_approach_section()
 		. wla_render_pricing_section()
 		. wla_render_resources_explorer_section()
@@ -1255,6 +1262,13 @@ function wla_render_snapshot_subpage( $slug ) {
 		$out .= wla_render_resources_explorer_section( array( 'index' => '02' ) );
 	}
 
+	if ( function_exists( 'wla_render_treatments_duo_section' ) ) {
+		$out .= wla_render_treatments_duo_section();
+		$out .= wla_render_guarantee_section();
+		$out .= wla_render_science_section();
+		$out .= wla_render_transformations_section();
+	}
+
 	// Multi-page behaviour: only the Contact page renders the inquiry form.
 	// Every other page closes with a CTA band that routes to /contact, followed
 	// by the "continue exploring" page grid.
@@ -1288,8 +1302,8 @@ function wla_render_cta_band( $args = array() ) {
 			'eyebrow'         => $d['ctaBandEyebrow'] ?? 'NEXT STEP',
 			'title'           => $d['ctaBandTitle'] ?? "Have a question we haven't covered?",
 			'body'            => $d['ctaBandBody'] ?? '',
-			'button_text'     => $d['ctaBandButton'] ?? 'Open the Contact page',
-			'button_url'      => '/contact',
+			'button_text'     => $d['ctaBandButton'] ?? 'Get a quote',
+			'button_url'      => '/consultation-eligibility/',
 			'secondary_text'  => $d['ctaBandSecondary'] ?? 'Read the FAQs',
 			'secondary_url'   => '/frequently-asked-questions',
 		)

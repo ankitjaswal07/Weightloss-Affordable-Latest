@@ -79,10 +79,9 @@ function wla_nav_items() {
 
 	return array(
 		array( 'slug' => 'about', 'path' => '/about', 'label' => $nav[0] ?? 'About' ),
-		array( 'slug' => 'weight-loss-services', 'path' => '/weight-loss-services', 'label' => 'Treatments' ),
+		array( 'slug' => 'weight-loss-services', 'path' => '/weight-loss-services', 'label' => $nav[1] ?? 'Treatments' ),
 		array( 'slug' => 'how-it-works', 'path' => '/how-it-works', 'label' => $nav[2] ?? 'How it works' ),
-		array( 'slug' => 'consultation-eligibility', 'path' => '/consultation-eligibility', 'label' => 'Get Quote' ),
-		array( 'slug' => 'resources', 'path' => '/resources', 'label' => $nav[3] ?? 'Resources' ),
+		array( 'slug' => 'consultation-eligibility', 'path' => '/consultation-eligibility', 'label' => $nav[3] ?? 'Get Quote' ),
 		array( 'slug' => 'frequently-asked-questions', 'path' => '/frequently-asked-questions', 'label' => $nav[4] ?? 'FAQs' ),
 	);
 }

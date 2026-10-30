@@ -27,6 +27,8 @@ Everything below is created with `publish` status (not draft):
 
 - Home and supporting pages (About, Treatments, How it works, Pricing, FAQs, Contact, legal pages)
 - Get Quote / Consultation eligibility page with the working step-by-step quiz
+- Homepage clinical sections (treatments, protection, GLP-1 signal, how it works, science, transformations, video stories)
+- Treatment → package → Get Quote workflow (`?treatment=` and `?plan=` are stored with the enquiry)
 - Weekly payment, How GLP-1 works, Clinicians, and Pharmacy transparency pages
 - Semaglutide and Tirzepatide treatment records (`/semaglutida/`, `/tirzepatida/`)
 - Educational articles

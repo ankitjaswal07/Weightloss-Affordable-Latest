@@ -48,8 +48,8 @@ $experience_files = array(
 	'modules/experience/includes/treatment-detail.php',
 	'modules/experience/includes/nuestra-quiz-bridge.php',
 	'modules/experience/includes/elementor.php',
-	'includes/demo-seed.php',
 	'includes/demo-clinical.php',
+	'includes/demo-seed.php',
 );
 foreach ( $experience_files as $relative ) {
 	$path = WLA_CORE_DIR . $relative;
