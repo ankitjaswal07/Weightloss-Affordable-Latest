@@ -1,0 +1,47 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WeightLossAffordable 1.0.0\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Primary navigation"
+msgstr "Navegación principal"
+
+msgid "Footer navigation"
+msgstr "Navegación del pie de página"
+
+msgid "Skip to content"
+msgstr "Saltar al contenido"
+
+msgid "Clear information. A more confident next step."
+msgstr "Información clara. Un siguiente paso con más confianza."
+
+msgid "English & Spanish"
+msgstr "Inglés y español"
+
+msgid "Open navigation"
+msgstr "Abrir navegación"
+
+msgid "Ask a question"
+msgstr "Haz una pregunta"
+
+msgid "Clear information for a more confident next step."
+msgstr "Información clara para dar el siguiente paso con confianza."
+
+msgid "Demo content only. Verify services, providers, prices, and legal terms before publication. Not medical advice."
+msgstr "Contenido de demostración. Verifica servicios, proveedores, precios y términos legales antes de publicar. No es consejo médico."
+
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+msgid "Let’s find a clearer way forward."
+msgstr "Busquemos un camino más claro."
+
+msgid "This page may have moved. Try the main navigation or search the site."
+msgstr "Es posible que esta página se haya movido. Prueba la navegación o busca en el sitio."
+
+msgid "Read more"
+msgstr "Leer más"

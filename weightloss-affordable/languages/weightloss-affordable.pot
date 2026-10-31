@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WeightLossAffordable 1.0.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Primary navigation"
+msgstr ""
+
+msgid "Footer navigation"
+msgstr ""
+
+msgid "Skip to content"
+msgstr ""
+
+msgid "Clear information. A more confident next step."
+msgstr ""
+
+msgid "English & Spanish"
+msgstr ""
+
+msgid "Open navigation"
+msgstr ""
+
+msgid "Ask a question"
+msgstr ""
+
+msgid "Clear information for a more confident next step."
+msgstr ""
+
+msgid "Demo content only. Verify services, providers, prices, and legal terms before publication. Not medical advice."
+msgstr ""
+
+msgid "Page not found"
+msgstr ""
+
+msgid "Let’s find a clearer way forward."
+msgstr ""
+
+msgid "This page may have moved. Try the main navigation or search the site."
+msgstr ""
+
+msgid "Read more"
+msgstr ""
